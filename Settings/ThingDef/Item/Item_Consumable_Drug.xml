@@ -1,0 +1,450 @@
+<ThingDefs><List>
+	
+	<ThingDef Type="Item" Name="Item_LongXianJing" Parent="DrugBase">
+	<ThingName>龙涎精</ThingName>
+	<TexPath>Spr\object\LongXianJing.png</TexPath>	
+	<Desc>承自上古仙人精炼之法，取十炼之，得其精。食之，三日不饥不劳。\n\n龙涎精能补充少量精元、少量筑基效果和中量娱乐。</Desc>
+	<Tags>
+		<Tag Name="Food" Level="2"/>
+		<Tag Name="DiscipleFood" Level="2"/>
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<Rate>6</Rate>
+	<Beauty>7</Beauty>
+	<MaxStack>1000</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	
+	<Item Lable="Drug">
+	       <Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>100</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="500"/>
+					<SalePrice Value="250" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="1000" />
+					<SalePrice Value="250" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="10" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>Light1</li>
+			<li>LowDensity1</li>
+		</PhysicalLables>
+		<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>70</Nutrition>
+			<Water>30</Water>
+			<PracticeNutrition>50</PracticeNutrition>
+			<FunAddion>50</FunAddion>
+			<Moods>
+				<li>Eat9</li>
+			</Moods>
+		</Food>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories></StuffCategories>
+			<CostStuffCount>0</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_Fruit" count = "100"/>
+			</CostItems>
+		</BeMade> 
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-273</TempMin>
+			<LingMax>999</LingMax>
+		</Rot>
+	</Item>
+	
+	<Element>
+			<Kind>Shui</Kind>
+	</Element>
+	<Light>
+		<Value>15</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>1</Radius>
+		<Color>FFCF00FF</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_YiYuanLingJiang" Parent="DrugBase">
+		<ThingName>一元灵浆</ThingName>
+		<TexPath>res\Sprs\object\object_lingsuizhi01</TexPath>
+		<Desc>集众多药草精制的疗伤奇药，一元灵浆能治疗外门骨肉伤病，有缓痛，少量补充筑基、精元、饱腹、水、娱乐之效。\n\n集草木之精，归元和一之灵浆也，有去百病，活血生肌肤之奇效。其为天下之奇药也，以其制法，唤名一元灵浆，为先贤“成独秀”得意之作，乃“很好用”精炼之法登顶之像也。可治疤痕</Desc>
+		<Tags>
+			<Tag Name="Drug" Level="3"/>
+		</Tags>	
+		<MaxHitPoints>1000</MaxHitPoints>
+		<Rate>6</Rate>
+		<Beauty>7</Beauty>
+		<ElementKind>Shui</ElementKind>
+		<Flammability>
+			<Flammability>0.4</Flammability>
+			<FlameSpawnThingDef></FlameSpawnThingDef>
+			<FlameSpawnChance>0</FlameSpawnChance>
+		</Flammability>
+		<Item Lable="Drug">
+		   <Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>50</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="375"/>
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="750" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="7" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<FabaoSuffix>液,水,雾,烟,霭</FabaoSuffix>
+			<PhysicalLables>
+				<li>GreatThing_Ling</li>
+			    <li>Liquid</li>
+			</PhysicalLables>
+			<Elixir>
+			    <ZhuJi>10000</ZhuJi>
+			    	<Modifier>Modifier_Item_Anodyne</Modifier>
+				<Fesistance>0.5</Fesistance>
+				<RecoveryLable>
+					<li>OldScar</li>
+				</RecoveryLable>
+				<RecoveryValue>2</RecoveryValue>
+				<RecoveryDuration>3</RecoveryDuration>
+			</Elixir>
+			<Drug>
+				<Value>0.8</Value>
+				<Duration>2</Duration>
+				<Parts>
+					<li>Any</li>
+				</Parts>
+			</Drug>
+			<BeMade>
+				<WorkToMake>20</WorkToMake>
+				<Quality>0</Quality>
+				<CostItems>
+					<Item name = "Item_Ginkgo" count = "50"/>
+					<Item name = "Item_Healroot" count = "50"/>
+					<Item name = "Item_MagicHerb" count = "50"/>
+					<Item name = "Item_GanodermaLucidum" count = "50"/>
+					<Item name = "Item_Ginseng" count = "50"/>
+				</CostItems>
+			</BeMade> 
+			<Rot>
+				<RotSpeed>0.0025</RotSpeed>
+				<DaysToRotStart>0</DaysToRotStart>
+				<TempMin>0</TempMin>
+				<LingMax>0</LingMax>
+			</Rot>
+		</Item>
+		<Element>
+			<Kind>Shui</Kind>
+			<Radius>1</Radius>
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_TianDaoguoYC" Parent="DrugBase">
+	
+	<ThingName>天道圣果</ThingName>
+	<TexPath>Spr\object\TianDaoguoYC.png</TexPath>	
+	<Desc>天道圣树感悟天地所结道果，因道果为天地交感所诞之物。故食之，弟子天地交感，能平心静气、助修炼、增参悟、增五维、立地筑基。\n\n注：谨慎服用，以免爆体。\n天道圣果食用后，内门弟子能增加10w参悟，外门弟子筑基立刻完成。食用后9天内，弟子5维增加3点，稳定心境，增加修炼，灵气回复速度，突破概率增加。</Desc>
+	<MaxStack>10</MaxStack>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>10</Rate>
+	<Beauty>10</Beauty>
+	<ElementKind>Mu</ElementKind>
+	<Item Lable="Dan">
+		<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>3</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5000" FriendPoint="3"/>
+					<SalePrice Value="3000" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="9000" />
+					<SalePrice Value="3000" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<FabaoSuffix>藤,锁,链,绳,索</FabaoSuffix>
+		<PhysicalLables>
+			<li>GreatThing_Ling</li>
+			<li>Soft2</li>
+		</PhysicalLables>
+		<Elixir>
+		    <Modifier>Modifier_Item_TianDaoguoYC</Modifier>
+			<ZhuJi>25000</ZhuJi>
+			<TreeExp>100000</TreeExp>
+			<Ling>500000</Ling>
+		</Elixir>
+		<Food>
+			<Moods>
+				<li>TianDaoguo</li>
+			</Moods>
+		</Food>
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>8</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<LingNumberRate>0.45</LingNumberRate>
+		</BeMaterial>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="2" Rate="0.25"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="3" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.25"/>
+		</DevourDatas>
+	</Item>
+	<StoryBnts>
+			<li Name="种植" Desc="种植以生成天道圣树。" Script="GameUlt.BuildLingPlant(bind, 'TreeTDSSYC')" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	<Ling>
+		<AddionLing>95</AddionLing>
+		<AddionRadius>2</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>40</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>24</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+		<Radius>2</Radius>
+		<Color>FFCF00FF</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_LingTaoYC" Parent="DrugBase">
+	<ThingName>灵桃</ThingName>
+	<TexPath>Spr\object\LingTaoYC.png</TexPath>	
+	<Desc>上年份的灵桃树所结的果实，灵气四溢，有延年益寿之效。寿命加十年。</Desc>
+	<Tags>
+		<Tag Name="Tame" Level="12"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>7</Rate>
+	<Beauty>8</Beauty>
+	<ElementKind>Mu</ElementKind>
+	<Flammability>
+		<Flammability>0.4</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="500"/>
+				<SalePrice Value="100" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="750" />
+				<SalePrice Value="150" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="250" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>果,珠,丸,球,罩</FabaoSuffix>
+		<PhysicalLables>
+			<li>Smooth1</li>
+			<li>Light1</li>
+		</PhysicalLables>
+		  <Elixir>
+			<ZhuJi>5000</ZhuJi>
+			<Modifier>Modifier_Item_LingTaoYC</Modifier>
+				<Fesistance>0.5</Fesistance>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>50</Nutrition>
+			<PracticeNutrition>50</PracticeNutrition>
+            		<Water>30</Water>			
+			<Poisonousness>0</Poisonousness>
+			<FunAddion>75</FunAddion>
+			<Moods>
+				<li>LingTao</li>
+			</Moods>
+		</Food>	
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="2" Rate="0.25"/>
+			<li Name="Item_BodyPractice_ShengMingLv1" Count="3" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.25"/>
+		</DevourDatas> 
+		<Rot>
+			<RotSpeed>0.1</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	
+	<Element>
+		<Kind>Mu</Kind>
+		<Radius>1</Radius>
+	</Element>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>1</Radius>
+		<Color>F991EF</Color>
+	</Light>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_PanTaoYC" Parent="DrugBase">
+	<ThingName>蟠桃</ThingName>
+	<TexPath>Spr\object\PanTaoYC.png</TexPath>	
+	<Desc>仙界蟠桃树所结的果实，仙气四溢，食之延寿五百载。\n除却延寿，蟠桃能大补精元和解任何内门伤害。治疗效果等同造化神丹。</Desc>
+	<Tags>
+		<Tag Name="Tame" Level="12"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxHitPoints>500</MaxHitPoints>
+	<Rate>9</Rate>
+	<Beauty>9</Beauty>
+	<ElementKind>Mu</ElementKind>
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+	</Flammability>
+	<Item Lable="Drug">
+		<Prices>
+				<TalkType>1</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="3000" FriendPoint="2"/>
+					<SalePrice Value="1500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="5000" />
+					<SalePrice Value="1500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+		<FabaoSuffix>果,珠,丸,球,罩</FabaoSuffix>
+		<PhysicalLables>
+			<li>Smooth1</li>
+			<li>Light1</li>
+		</PhysicalLables>
+		<Elixir>
+			<ZhuJi>15000</ZhuJi>
+			<RecoveryLable>
+			<li>Dfood</li>
+			<li>None</li>
+			<li>OldScar</li>
+			<li>Jin</li>
+			<li>Mu</li>
+			<li>Shui</li>
+			<li>Huo</li>
+			<li>Tu</li>
+			<li>Ling</li>
+			</RecoveryLable>
+			<RecoveryValue>1000</RecoveryValue>
+			<RecoveryDuration>0.04</RecoveryDuration>
+			<Modifier>Modifier_Item_PanTaoYC</Modifier>
+			<Fesistance>0.5</Fesistance>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>50</Nutrition>
+			<PracticeNutrition>500</PracticeNutrition>
+            		<Water>30</Water>			
+			<Poisonousness>0</Poisonousness>
+			<FunAddion>100</FunAddion>
+			<Moods>
+				<li>PanTao</li>
+			</Moods>
+		</Food>	
+		<BeMaterial>
+			<FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>2</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<DevourDatas>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="1"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="1" Rate="0.5"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="2" Rate="0.25"/>
+			<li Name="Item_BodyPractice_ShengMingLv2" Count="3" Rate="0.1"/>
+			<li Name="Item_BodyPractice_ShengMingLv3" Count="1" Rate="0.25"/>
+		</DevourDatas> 
+		<Rot>
+			<RotSpeed>0.01</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<StoryBnts>
+			<li Name="种植" Desc="种植以生成蟠桃树。" Script="GameUlt.BuildLingPlant(bind, 'TreePanTaoShuYC')" Icon="res/Sprs/ui/icon_hand"/>
+	</StoryBnts>
+	<Element>
+		<Kind>Mu</Kind>
+		<Radius>1</Radius>
+	</Element>
+	<Light>
+		<Value>15</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>1</Radius>
+		<Color>F991EF</Color>
+	</Light>
+	</ThingDef>
+	
+	
+</List></ThingDefs>

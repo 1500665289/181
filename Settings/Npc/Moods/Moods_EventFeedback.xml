@@ -1,0 +1,62 @@
+<MoodDefs><List>
+	
+	
+	<Mood Name="Mood_ZhongLingQiGongNingYC">
+		<DisplayName>中度灵气共鸣</DisplayName>
+		<Desc>跟灵气水乳交融的感觉很棒。</Desc>
+		<StoryDesc>正因为在灵气浓郁中修炼而一脸舒畅</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>1</StackRatio>
+		<Value>10</Value>
+		<Duration>-1</Duration>
+	</Mood>
+	
+	<Mood Name="XianWei">
+		<DisplayName>神仙绝味</DisplayName>
+		<Desc>[TXT]此物不应地上有~飘飘乎欲登仙！</Desc>
+		<StoryDesc>沉醉于神仙绝味中无法自拔。</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.4</StackRatio>
+		<Value>75</Value>
+		<Duration>3</Duration>
+	</Mood>
+	
+	<Mood Name="XianWei1">
+		<DisplayName>仙珍极味</DisplayName>
+		<Desc>[TXT]天上仙珍，食之忘乎自我！</Desc>
+		<StoryDesc>沉醉于仙珍极味中无法自拔。</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.4</StackRatio>
+		<Value>150</Value>
+		<Duration>9</Duration>
+	</Mood>
+	
+	<Mood Name="TianDaoguo">
+		<DisplayName>天地交感</DisplayName>
+		<Desc>[TXT]吃了天道圣果后，感觉跟天地合而为一了！</Desc>
+		<StoryDesc>与天地合一，感应大道。</StoryDesc>
+		<MaxStack>1</MaxStack>
+		<StackRatio>0.4</StackRatio>
+		<Value>1</Value>
+		<Duration>3</Duration>
+	</Mood>
+	
+	<Mood Name="LingTao">
+		<DisplayName>桃之灵效</DisplayName>
+		<Desc>[TXT]食用灵桃后，得以延年，半生无忧！</Desc>
+		<StoryDesc>喜得十年寿，悠然自得。</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.4</StackRatio>
+		<Value>50</Value>
+		<Duration>9</Duration>
+	</Mood>
+	<Mood Name="PanTao">
+		<DisplayName>桃之神效</DisplayName>
+		<Desc>[TXT]食用灵桃后，得以延寿五百载，修仙无忧！</Desc>
+		<StoryDesc>得寿五百载，喜不胜自！</StoryDesc>
+		<MaxStack>3</MaxStack>
+		<StackRatio>0.4</StackRatio>
+		<Value>100</Value>
+		<Duration>29</Duration>
+	</Mood>
+</List></MoodDefs>

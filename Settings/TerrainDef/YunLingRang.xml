@@ -1,0 +1,183 @@
+﻿<TerrainDefs><List>
+	
+	<TerrainDef Name="FanRangYC" Parent="TerrainBase">
+		<DisplayName>凡壤</DisplayName>
+		<Elements>
+			<li Kind="Tu" Power="2"/>
+			<li Kind="Shui" Power="0.5"/>
+			<li Kind="Mu" Power="0.5"/>
+		</Elements>
+		<StoryDesc>凡间之土，松柏之侧,绿荫之下</StoryDesc>
+		<Tags>
+			<Tag Name="Mud" Level="1"/>
+			<Tag Name="Land_FSZW" Level="1"/>
+		</Tags>
+		<RenderLayer>10</RenderLayer>
+		<NextBase>1</NextBase>
+		<Color>0D000FFF</Color>
+		<MiniColor>715C37FF</MiniColor>
+		<DustPower>1</DustPower>
+		<PathCost>10</PathCost>
+		<Fertility>1</Fertility>
+		<Beauty>-1</Beauty>
+	</TerrainDef>
+	
+	<TerrainDef Name="WoWoTu" Parent="TerrainBase">
+		<DisplayName>沃土</DisplayName>
+		<StoryDesc>凡间之土，松柏之侧,绿荫之下</StoryDesc>
+		<Tags>
+		    	<Tag Name="Mud" Level="1"/>
+			<Tag Name="Land_FSZW" Level="1"/>
+		</Tags>
+		<RenderLayer>12</RenderLayer>
+		<PathCost>10</PathCost>
+		<DustPower>1</DustPower>
+		<Fertility>2</Fertility>
+		<Beauty>-2</Beauty>
+		<MiniColor>989039FF</MiniColor>
+		<Elements>
+			<li Kind="Tu" Power="1"/>
+			<li Kind="Shui" Power="0.5"/>
+			<li Kind="Mu" Power="1"/>
+		</Elements>
+	</TerrainDef>
+
+	<TerrainDef Name="TongLingRang" Parent="TerrainBase">
+		<DisplayName>通灵壤</DisplayName>
+		<StoryDesc>采用不传之秘粗缺以粗糙手法改造的通灵的土壤，其效3倍于凡壤。</StoryDesc>
+		<Tags>
+			<Tag Name="LingDi_FSZW" Level="1"/>
+			<Tag Name="Land_FSZW" Level="1"/>
+		</Tags>
+		<OutFix>WetLand</OutFix>
+		<OverLayer>0</OverLayer>
+		<RenderLayer>21</RenderLayer>
+		<PathCost>10</PathCost>
+		<Fertility>3</Fertility>
+		<IsSnowed>0</IsSnowed>
+		<Beauty>1</Beauty>
+		<MiniColor>006550E5</MiniColor>
+		<AddionLing>10</AddionLing>
+		<Elements>
+			<li Kind="Tu" Power="1"/>
+			<li Kind="Shui" Power="0.5"/>
+			<li Kind="Mu" Power="0.5"/>
+		</Elements>
+	</TerrainDef>
+
+	<TerrainDef Name="LingRang" Parent="TerrainBase">
+		<DisplayName>灵壤</DisplayName>
+		<StoryDesc>采用不传之秘稍稍改造的灵壤，可以栽种灵植。生长其上的植物能以4倍生长速度成长。</StoryDesc>
+		<Tags>
+			<Tag Name="LingDi_FSZW" Level="1"/>
+			<Tag Name="Land_FSZW" Level="1"/>
+		</Tags>
+		<OutFix>WetLand</OutFix>
+		<OverLayer>0</OverLayer>
+		<RenderLayer>21</RenderLayer>
+		<PathCost>10</PathCost>
+		<Fertility>4</Fertility>
+		<IsSnowed>0</IsSnowed>
+		<Beauty>3</Beauty>
+		<MiniColor>006550E5</MiniColor>
+		<AddionLing>20</AddionLing>
+		<Elements>
+			<li Kind="Tu" Power="1.5"/>
+			<li Kind="Shui" Power="1"/>
+			<li Kind="Mu" Power="1"/>
+		</Elements>
+	</TerrainDef>
+	
+	<TerrainDef Name="YunLingRang" Parent="TerrainBase">
+		<DisplayName>蕴灵壤</DisplayName>
+		<StoryDesc>采用不传之秘改造的灵壤，能蕴灵。生长其上的植物能以6倍生长速度成长。</StoryDesc>
+		<Tags>
+			<Tag Name="LingDi_FSZW" Level="1"/>
+			<Tag Name="Land_FSZW" Level="1"/>
+		</Tags>
+		<OutFix>WetLand</OutFix>
+		<OverLayer>0</OverLayer>
+		<RenderLayer>21</RenderLayer>
+		<PathCost>10</PathCost>
+		<Fertility>6</Fertility>
+		<IsSnowed>0</IsSnowed>
+		<Beauty>4</Beauty>
+		<MiniColor>006550E5</MiniColor>
+		<AddionLing>30</AddionLing>
+		<Elements>
+			<li Kind="Tu" Power="2"/>
+			<li Kind="Shui" Power="1.5"/>
+			<li Kind="Mu" Power="1.5"/>
+		</Elements>
+	</TerrainDef>
+	
+	<TerrainDef Name="YangLingRang" Parent="TerrainBase">
+		<DisplayName>养灵壤</DisplayName>
+		<StoryDesc>采用不传之秘改造的灵壤，能养灵。生长其上的植物能以8倍生长速度成长。</StoryDesc>
+		<Tags>
+			<Tag Name="LingDi_FSZW" Level="1"/>
+			<Tag Name="Land_FSZW" Level="1"/>
+		</Tags>
+		<OutFix>WetLand</OutFix>
+		<OverLayer>0</OverLayer>
+		<RenderLayer>21</RenderLayer>
+		<PathCost>10</PathCost>
+		<Fertility>8</Fertility>
+		<IsSnowed>0</IsSnowed>
+		<Beauty>5</Beauty>
+		<MiniColor>006550E5</MiniColor>
+		<AddionLing>40</AddionLing>
+		<Elements>
+			<li Kind="Tu" Power="2.5"/>
+			<li Kind="Shui" Power="2"/>
+			<li Kind="Mu" Power="2"/>
+		</Elements>
+	</TerrainDef>
+	
+	<TerrainDef Name="QianHu" Parent="TerrainBase">
+		<DisplayName>浅湖</DisplayName>
+		<StoryDesc>湖畔树下,秀水之侧</StoryDesc>
+		<Tags>
+			<Tag Name="Water_FSZW" Level="1"/>
+			<Tag Name="ShallowWater" Level="1"/>
+		</Tags>
+		<OutFix>WetLand</OutFix>
+		<TerrainType>ShallowWater</TerrainType>
+		<RenderLayer>23</RenderLayer>
+		<PathCost>25</PathCost>
+		<DustPower>2</DustPower>
+		<Fertility>1.6</Fertility>
+		<IsSnowed>0.5</IsSnowed>
+		<Beauty>1</Beauty>
+		<MiniColor>5C8690FF</MiniColor>
+		<Elements>
+			<li Kind="Shui" Power="2"/>
+			<li Kind="Tu" Power="1"/>
+		</Elements>
+	</TerrainDef>
+	
+	<TerrainDef Name="LingHuYC" Parent="TerrainBase">
+		<DisplayName>灵湖</DisplayName>
+		<StoryDesc>湖畔树下,秀水之侧</StoryDesc>
+		<Tags>
+			<Tag Name="Water_FSZW" Level="1"/>
+			<Tag Name="LingDi_FSZW" Level="1"/>
+		</Tags>
+		<Color>113E40FF</Color>
+		<OutFix>WetLand</OutFix>
+		<TerrainType>ShallowWater</TerrainType>
+		<RenderLayer>23</RenderLayer>
+		<PathCost>25</PathCost>
+		<DustPower>2</DustPower>
+		<Fertility>2</Fertility>
+		<IsSnowed>0</IsSnowed>
+		<Beauty>3</Beauty>
+		<MiniColor>2EE2E8FF</MiniColor>
+		<AddionLing>40</AddionLing>
+		<Elements>
+			<li Kind="Shui" Power="2"/>
+			<li Kind="Tu" Power="1"/>
+		</Elements>
+	</TerrainDef>
+
+</List></TerrainDefs>

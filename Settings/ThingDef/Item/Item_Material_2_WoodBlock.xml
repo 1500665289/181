@@ -1,0 +1,89 @@
+﻿<ThingDefs><List>
+
+
+
+
+	
+<ThingDef Type="Item" Name="Item_PanTaoWoodBlock" Parent="WoodBlockBase">
+	<ThingName>蟠桃木料</ThingName>
+	<TexPath>Spr\object\PanTaoMuLiao.png</TexPath>
+	<Desc>蟠桃木制成的木料，质地绝佳，可以非常有效地用于制作。</Desc>
+	<Beauty>20</Beauty>
+	<Rate>9</Rate>
+	<Item>
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>500</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="200" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="250" />
+				<SalePrice Value="1" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="150" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Smooth2</li>
+			<li>Hard2</li>
+		</PhysicalLables>
+		<FuelMultiplier>3</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_PanTaoWood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>蟠桃木</NamePrefix>
+			<StuffTexPath>res/mattex/mtl_wood2</StuffTexPath>
+			<RateWhenBeMain>9</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>4</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0.45</AttackSpeedWhenBeMain>
+			<MaxHitPointsPerNum>80</MaxHitPointsPerNum>
+			<BurningPointWhenBeMain>1000</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>20</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>10</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>0.8</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.4</WorktoMakeRate>
+			<WorktoBuildRate>1.4</WorktoBuildRate>
+			
+			<ColorWhenBeMain>cda794</ColorWhenBeMain>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>40</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>2</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>34</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>12</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	<Light>
+		<Value>10</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>1</Radius>
+		<Color>FFFFFF</Color>
+	</Light>
+</ThingDef>
+
+
+
+</List></ThingDefs>

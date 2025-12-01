@@ -1,0 +1,333 @@
+<ThingDefs><List>
+	
+	
+	<ThingDef Type="Item" Name="Item_XianWeiLongXianYC" Parent="SimpleFoodBase">
+	<TexPath>Spr/object/XianWeiLongXian.png</TexPath>		
+	<ThingName>仙味龙涎</ThingName>
+	<Desc>此仙珍不应地上有，食之飘飘然欲登仙。\n\n相传“成独秀”晚年有感于天地，一朝顿悟，遂创下仙家烹饪手法，仙味龙涎乃试手之作。</Desc>
+	<Tags>
+		<Tag Name="Food" Level="16"/>
+		<Tag Name="DiscipleFood" Level="16"/>
+		<Tag Name="BowlFood" Level="1"/>
+		<Tag Name="Tame" Level="25"/>
+		<Tag Name="TameMeat" Level="1"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<Rate>5</Rate>
+	<Beauty>7</Beauty>
+	<MaxStack>500</MaxStack>
+	
+	<Item Lable="Food">
+	   <Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>200</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="10"/>
+					<SalePrice Value="4" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="20" />
+					<SalePrice Value="4" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="0" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+	    <Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>85</Nutrition>
+			<Water>30</Water>
+			<FunAddion>120</FunAddion>
+			<Moods>
+				<li>XianWei</li>
+			</Moods>
+		</Food>
+		<BeMaterial>
+			<RateWhenBeMain>8</RateWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+				<Stuff name = "Meat"/>
+				<Stuff name = "Ingredient"/>
+			</StuffCategories>
+			<CostStuffCount>20</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_Fruit" count = "30"/>
+					<Item name = "Item_Water" count = "10"/>
+					
+			</CostItems>
+		</BeMade> 
+		<Rot>
+			<RotSpeed>0.001</RotSpeed>
+			<DaysToRotStart>50</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Light>
+		<Value>15</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>1</Radius>
+		<Color>FFCF00FF</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_XianPingLongXianYC" Parent="SimpleFoodBase">
+	<TexPath>Spr/object/XianPingLongXian.png</TexPath>		
+	<ThingName>仙品龙涎</ThingName>
+	<Desc>天上灵珍，食之飘飘然。\n\n“成独秀”登仙后采用仙家烹饪手法制作的一道美食。\n\n因凡间材料受限，在凡间只能制作出凡品等级。</Desc>
+	<Tags>
+		<Tag Name="Food" Level="20"/>
+		<Tag Name="DiscipleFood" Level="20"/>
+		<Tag Name="BowlFood" Level="1"/>
+		<Tag Name="Tame" Level="25"/>
+		<Tag Name="TameMeat" Level="1"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<Rate>6</Rate>
+	<MaxStack>1500</MaxStack>
+	<Beauty>10</Beauty>
+	<Item Lable="Food">
+		<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>50</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="150"/>
+					<SalePrice Value="70" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="200" />
+					<SalePrice Value="70" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1" />
+					<SalePrice Value="1" />
+				</li>
+			</Prices>
+	    <Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>85</Nutrition>
+			<Water>30</Water>
+			<PracticeNutrition>50</PracticeNutrition>
+			<FunAddion>200</FunAddion>
+			<Moods>
+				<li>XianWei1</li>
+			</Moods>
+		</Food>
+		<BeMaterial>
+			<RateWhenBeMain>7</RateWhenBeMain>
+		</BeMaterial>
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories>
+				<Stuff name = "Meat"/>
+				<Stuff name = "Ingredient"/>
+			</StuffCategories>
+			<CostStuffCount>30</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_LongXianJing" count = "1"/>
+					<Item name = "Item_Ginseng" count = "30"/>
+					<Item name = "Item_GanodermaLucidum" count = "30"/>
+					<Item name = "Item_Water" count = "10"/>
+			</CostItems>
+		</BeMade> 
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Light>
+		<Value>60</Value>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>FFCF00FF</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_XingLingJing" Parent="SimpleFoodBase">
+	<ThingName>杏灵精</ThingName>
+	<TexPath>res\Sprs\object\object_lingmuxuejie01</TexPath>	
+	<Desc>杏灵精可以补充杏灵精可以补充少量精元、筑基效果和大量娱乐。\n\n有杏积如山，则何如？有承上古仙人精炼之法，集百数取其精，其灵显，故名曰杏灵精也。\n\n银杏果爆仓怎么办？快使用上古仙人“贼好用”精炼法，在烹饪台用100个精炼1个杏灵精，妈妈再也不用担心我的银杏果爆仓了~</Desc>
+	<Tags>
+		<Tag Name="Food" Level="4"/>
+		<Tag Name="DiscipleFood" Level="4"/>
+	</Tags>	
+	<Rate>5</Rate>
+	<Beauty>8</Beauty>
+	<MaxStack>1000</MaxStack>
+	<ElementKind>Mu</ElementKind>
+	<Item>
+		<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>300</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="50"/>
+					<SalePrice Value="10" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="100" />
+					<SalePrice Value="20" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>85</Nutrition>
+			<Water>30</Water>
+			<PracticeNutrition>50</PracticeNutrition>
+			<FunAddion>100</FunAddion>
+			<Moods>
+				<li>Eat9</li>
+			</Moods>
+		</Food>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories></StuffCategories>
+			<CostStuffCount>0</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_Ginkgo" count = "100"/>
+			</CostItems>
+		</BeMade> 
+		<Rot>
+			<RotSpeed>0.003</RotSpeed>
+			<DaysToRotStart>150</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+		<Light>
+		<Value>100</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>00FF00FF</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_LiXiangLu1" Parent="SimpleFoodBase">
+	<ThingName>梨香露</ThingName>
+	<TexPath>res\Sprs\object\object_dimulingye02</TexPath>	
+	<Desc>梨香露能补充很少量精元、筑基效果和少量娱乐。\n\n上古仙人精炼之法流于民，其效十不存一。有梨取其十，炼之，得一露。其露无灵显，其香百里可闻，故名曰梨香露。\n\n民间高手习得上古仙人精炼之法皮毛，突发奇想拿梨子在烹饪台精炼，得到超级香的梨香露。自此“很好用”精炼之法口口相传于民间。</Desc>
+	<Tags>
+		<Tag Name="Food" Level="3"/>
+		<Tag Name="DiscipleFood" Level="3"/>
+	</Tags>	
+	<Rate>5</Rate>
+	<Beauty>6</Beauty>
+	<MaxStack>2000</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="Food">
+		<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>100</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="10"/>
+					<SalePrice Value="4" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="20" />
+					<SalePrice Value="4" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="1" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>85</Nutrition>
+			<Water>30</Water>
+			<PracticeNutrition>50</PracticeNutrition>
+			<FunAddion>20</FunAddion>
+			<Moods>
+				<li>Eat8</li>
+			</Moods>
+		</Food>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<Condition>
+					<Skills>
+						<!--<Skill name = "sss" level="1"/>-->
+					</Skills>
+					<Researchs>
+						<!--<Research name = "sss" level="1"/>-->
+					</Researchs>
+			</Condition>
+			<StuffCategories></StuffCategories>
+			<CostStuffCount>0</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_Pear" count = "100"/>
+			</CostItems>
+		</BeMade> 
+		<Rot>
+			<RotSpeed>0.001</RotSpeed>
+			<DaysToRotStart>150</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Light>
+		<Value>100</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>87CEFF88</Color>
+	</Light>
+	</ThingDef>
+		
+</List></ThingDefs>

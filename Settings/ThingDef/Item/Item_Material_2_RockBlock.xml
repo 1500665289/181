@@ -1,0 +1,443 @@
+﻿<ThingDefs><List>
+
+
+
+
+<ThingDef Type="Item" Name="Item_JinLingJingZhuanYC" Parent="RockBlockBase">
+	<ThingName>金灵晶砖</ThingName>
+	<TexPath>Spr\object\JinLingJingZhuanYC.png</TexPath>	
+	<Desc>金灵晶切割成的砖块，可以更有效的用来进行制作。</Desc>
+    <!--<Color>5F6D7B88</Color>-->
+	<Rate>9</Rate>
+	<Beauty>20</Beauty>
+	<ElementKind>Jin</ElementKind>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3250"/>
+				<SalePrice Value="1750" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5250" />
+				<SalePrice Value="1770" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>金灵晶</NamePrefix>
+			
+			<StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<RateWhenBeMain>9</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>3.5</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0.1</AttackSpeedWhenBeMain>
+			<ColorWhenBeMain>fbf428</ColorWhenBeMain>
+			<CostMultiplier>2</CostMultiplier>
+			
+			<MaxHitPointsPerNum>190</MaxHitPointsPerNum>
+			
+			<FlammabilityWhenBeMain>0.1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>20</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>11</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>1</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.6</WorktoMakeRate>
+			<WorktoBuildRate>1.6</WorktoBuildRate>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_JinLingJingYC" count = "1"/>
+			</CostItems>
+		</BeMade> 
+    </Item>
+	<Ling>
+		<AddionLing>80</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>55</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Jin</Kind>
+		<Value>10</Value>         
+		<Radius>5</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>2</Radius>
+		<Color>fbf428</Color>
+	</Light>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_MuLJZhuanYC" Parent="RockBlockBase">
+	<ThingName>木灵晶砖</ThingName>
+	<TexPath>Spr\object\MuLingJingZhuanYC.png</TexPath>	
+	<Desc>木灵晶切割成的砖块，可以更有效的用来进行制作。</Desc>
+    <!--<Color>5F6D7BFF</Color>-->
+	<Rate>9</Rate>
+	<Beauty>20</Beauty>
+	<ElementKind>Mu</ElementKind>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3250"/>
+				<SalePrice Value="1750" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5250" />
+				<SalePrice Value="1770" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>木灵晶</NamePrefix>
+			
+			<StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<RateWhenBeMain>9</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>3.5</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0.1</AttackSpeedWhenBeMain>
+			<ColorWhenBeMain>34de00</ColorWhenBeMain>
+			<CostMultiplier>2</CostMultiplier>
+			
+			<MaxHitPointsPerNum>190</MaxHitPointsPerNum>
+			
+			<FlammabilityWhenBeMain>0.1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>20</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>11</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>1</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.6</WorktoMakeRate>
+			<WorktoBuildRate>1.6</WorktoBuildRate>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_MuLingJingYC" count = "1"/>
+			</CostItems>
+		</BeMade> 
+    </Item>
+	<Ling>
+		<AddionLing>80</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>55</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>10</Value>         
+		<Radius>5</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>2</Radius>
+		<Color>34de00</Color>
+	</Light>
+	</ThingDef>
+	
+	
+
+	
+	<ThingDef Type="Item" Name="Item_ShuiLingJingZhuanYC" Parent="RockBlockBase">
+	<ThingName>水灵晶砖</ThingName>
+	<TexPath>Spr\object\ShuiLingJingZhuanYC.png</TexPath>	
+	<Desc>水灵晶切割成的砖块，可以更有效的用来进行制作。</Desc>
+   <!--<Color>010cfe</Color>-->
+	<Rate>9</Rate>
+	<Beauty>20</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3250"/>
+				<SalePrice Value="1750" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5250" />
+				<SalePrice Value="1770" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>水灵晶</NamePrefix>
+			
+			<StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<RateWhenBeMain>9</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>3.5</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0.1</AttackSpeedWhenBeMain>
+			<ColorWhenBeMain>010cfe</ColorWhenBeMain>
+			<CostMultiplier>2</CostMultiplier>
+			
+			<MaxHitPointsPerNum>190</MaxHitPointsPerNum>
+
+			<FlammabilityWhenBeMain>0.1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>20</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>11</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>1</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.6</WorktoMakeRate>
+			<WorktoBuildRate>1.6</WorktoBuildRate>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_ShuiLingJingYC" count = "1"/>
+			</CostItems>
+		</BeMade> 
+    </Item>
+	<Ling>
+		<AddionLing>80</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>55</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>10</Value>         
+		<Radius>5</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Heat>
+		<Value>-60</Value>
+		<Radius>3</Radius>
+		<RoomValue>-120</RoomValue>
+		<Failing>0.4</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>2</Radius>
+		<Color>0600fb</Color>
+	</Light>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_HuoLingJingZhuanYC" Parent="RockBlockBase">
+	<ThingName>火灵晶砖</ThingName>
+	<TexPath>Spr\object\HuoLingJingZhuanYC.png</TexPath>	
+	<Desc>火灵晶切割成的砖块，可以更有效的用来进行制作。</Desc>
+   <!--<Color>5F6D7B88</Color>-->
+	<Rate>9</Rate>
+	<Beauty>20</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3250"/>
+				<SalePrice Value="1750" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5250" />
+				<SalePrice Value="1770" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>火灵晶</NamePrefix>
+			
+			<StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<RateWhenBeMain>9</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>3.5</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0.1</AttackSpeedWhenBeMain>
+			<ColorWhenBeMain>f82800</ColorWhenBeMain>
+			<CostMultiplier>2</CostMultiplier>
+			
+			<MaxHitPointsPerNum>190</MaxHitPointsPerNum>
+	
+			<FlammabilityWhenBeMain>0.1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>20</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>11</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>1</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.6</WorktoMakeRate>
+			<WorktoBuildRate>1.6</WorktoBuildRate>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_HuoLingJingYC" count = "1"/>
+			</CostItems>
+		</BeMade> 
+    </Item>
+	<Ling>
+		<AddionLing>80</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>55</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>10</Value>         
+		<Radius>5</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Heat>
+		<Value>60</Value>
+		<Radius>3</Radius>
+		<RoomValue>120</RoomValue>
+		<Failing>0.4</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>2</Radius>
+		<Color>f82800</Color>
+	</Light>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_TuLingJingZhuanYC" Parent="RockBlockBase">
+	<ThingName>土灵晶砖</ThingName>
+	<TexPath>Spr\object\TuLingJingZhuanYC.png</TexPath>	
+	<Desc>金灵晶切割成的砖块，可以更有效的用来进行制作。</Desc>
+    <!--<Color>5F6D7BFF</Color>-->
+	<Rate>9</Rate>
+	<Beauty>20</Beauty>
+	<ElementKind>Tu</ElementKind>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3250"/>
+				<SalePrice Value="1750" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5250" />
+				<SalePrice Value="1770" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+			<NamePrefix>土灵晶</NamePrefix>
+			
+			<StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+			<StuffColorWeight>-1.35</StuffColorWeight>
+			
+			<RateWhenBeMain>9</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>3.5</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>0.1</AttackSpeedWhenBeMain>
+			<ColorWhenBeMain>8B4513FF</ColorWhenBeMain>
+			<CostMultiplier>2</CostMultiplier>
+			
+			<MaxHitPointsPerNum>190</MaxHitPointsPerNum>
+
+			<FlammabilityWhenBeMain>0.1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>20</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>11</ElementPowerWhenBeMain>
+			<PracticeEffectivenessWhenBeMain>1</PracticeEffectivenessWhenBeMain>
+			
+			<WorktoMakeRate>1.6</WorktoMakeRate>
+			<WorktoBuildRate>1.6</WorktoBuildRate>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_TuLingJingYC" count = "1"/>
+			</CostItems>
+		</BeMade> 
+    </Item>
+	<Ling>
+		<AddionLing>80</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		
+		<Attenuation>0.1</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>55</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>10</Value>         
+		<Radius>5</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>2</Radius>
+		<Color>8B4513FF</Color>
+	</Light>
+	</ThingDef>
+	
+
+	
+	
+</List></ThingDefs>

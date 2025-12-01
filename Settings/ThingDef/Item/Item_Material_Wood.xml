@@ -1,0 +1,91 @@
+<ThingDefs><List>
+
+
+
+	
+	<ThingDef Type="Item" Name="Item_PanTaoWood" Parent="WoodBase">
+	<ThingName>蟠桃木</ThingName>
+	<TexPath>Spr\object\PanTaoMuYC.png</TexPath>
+	<Desc>仙树蟠桃之木，质地绝佳，乃仙家灵材。</Desc>
+	<Rate>9</Rate>
+	<Beauty>20</Beauty>
+	<!--	<Color>8C6F14FF</Color>	-->
+	<Flammability>
+		<Flammability>0</Flammability>
+		<BurningPoint>500</BurningPoint>
+	</Flammability>
+	<Item>
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>100</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1500" FriendPoint="1"/>
+				<SalePrice Value="500" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2500" />
+				<SalePrice Value="500" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<NotFengshuiItem>0</NotFengshuiItem>
+		<PhysicalLables>
+			<li>Smooth2</li>
+			<li>Hard2</li>
+		</PhysicalLables>
+		<FuelMultiplier>4</FuelMultiplier>
+		<BeMaterial>
+			<NamePrefix>蟠桃木</NamePrefix>
+			<CostMultiplier>1</CostMultiplier>
+			<StuffTexPath>res/mattex/mtl_wood2</StuffTexPath>
+			
+			<RateWhenBeMain>9</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>5</WorkSpeedCoefficientWhenBeMain>
+			<AttackSpeedWhenBeMain>3</AttackSpeedWhenBeMain>
+		
+			<ColdInsulationMultiplier>1</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>1</HeatInsulationMultiplier>
+			
+			<MaxHitPointsPerNum>6</MaxHitPointsPerNum>
+			<LingNumberRate>0.9</LingNumberRate>
+			
+			<BurningPointWhenBeMain>1500</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>20</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>1</WorktoMakeRate>
+			<WorktoBuildRate>1</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Ling>
+		<AddionLing>45</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>2</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>34</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>12</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	<Light>
+		<Value>10</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>1</Radius>
+		<Color>FFFFFF</Color>
+	</Light>
+	</ThingDef>
+	
+	
+</List></ThingDefs>

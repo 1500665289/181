@@ -1,0 +1,28 @@
+﻿<Esotericas><List>
+	<Esoterica Name="Gong_MeiRiNongJingShang_YC">
+		<DisplayName>农经 上篇</DisplayName>
+		<Icon>Spr\object\GFPng\FGMeiRiShang.png</Icon>
+		<StarLevel>1</StarLevel>
+		<Difficulty>0</Difficulty>
+		<Desc>炼气修士“独秀”早年喜耕田，修炼并未受阻，修炼之快反强于同辈非一筹。\n长久的农耕修炼生活使独秀乐在其中，心境愈发坚定。\n以自身感悟经历，书写万字箴言，传于后人。\n习得此法可大幅提升心境。诸多妙用，不尽于此。心境AddV+50，根本灵气BAddV+100，情绪AddV+50，灵气恢复AddP+100，潜力AddV+3，炼丹速度AddV+3
+炼丹成功率AddV+1，术法CDAddP-0.3，术法伤害和灵气消耗AddP+16。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Mu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]提升灵气最大值\n提升灵气恢复速度\n大幅提升心境。诸多妙用自行体会。[/color][/size]</EffectDesc>
+		<Modifier>Gong_MeiRiNongJingShang_YC</Modifier>	
+	</Esoterica>
+	<Esoterica Name="Gong_MeiRiNongJingXia_YC">
+		<DisplayName>农经 下篇</DisplayName>
+		<Icon>Spr\object\GFPng\FGMeiRiXia.png</Icon>
+		<StarLevel>7</StarLevel>
+		<Difficulty>0</Difficulty>
+		<Desc>百年沧桑，耕田相伴。自是炼气耕田起，每日勤耕不辍，术法修为与日俱增。\n百年如白驹过隙，独秀已然金丹境，曾曰：“农田长存，道心不坏，此乃吾道”。\n独秀农耕之心以固，固心之法记于“农经 下篇”\n习得此法，心境不坏。其间妙用之多，不足外人道也。心境AddV+100，潜力AddV+3,术法CDAddP-0.5,灵气恢复AddP+200,根本灵气BAddV+20,情绪AddV+100,法宝伤害和灵气消耗AddP+5，炼丹速度AddV+7
+炼丹成功率AddV+2，术法伤害和灵气消耗AddP+32。</Desc>
+		<GLevel>Dan2</GLevel>
+		<Element>Mu</Element>
+		<Type>None</Type>
+		<EffectDesc>[size=10][color=#D06508]金丹境，心境已固，不再退转。其法之妙，不尽于言表。[/color][/size]</EffectDesc>
+		<Modifier>Gong_MeiRiNongJingXia_YC</Modifier>	
+	</Esoterica>
+</List></Esotericas>

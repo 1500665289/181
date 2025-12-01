@@ -1,0 +1,387 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_JinLingJingYC" Parent="RockBase">
+	<TexPath>Spr\object\JinLingJingYC.png</TexPath>
+	<ThingName>金灵晶</ThingName>	
+	<Desc>灵晶与天地灵根通过“和而为一”特殊法门炼制而成，行属金，“成独秀”的成熟作之一。</Desc>
+	<Rate>9</Rate>
+	<Beauty>20</Beauty>
+	<ElementKind>Jin</ElementKind>
+	<Item Lable="LingStone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3250" FriendPoint="2"/>
+				<SalePrice Value="1750" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5250" />
+				<SalePrice Value="1770" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard2</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+				<NamePrefix>金灵晶</NamePrefix>
+				<CostMultiplier>1</CostMultiplier>
+				
+				<RateWhenBeMain>9</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.8</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>20</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<Elixir>
+			<Ling>550000</Ling>
+			<Modifier>Dan_LingCrystal</Modifier>
+		</Elixir>
+		<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "5"/>
+					<Item name = "Item_JinEssence" count = "1"/>
+				</CostItems>
+		</BeMade> 
+	</Item>
+	<Ling>
+		<AddionLing>85</AddionLing><!-- 附加灵气 -->
+		<AddionRadius>2</AddionRadius><!-- 附加半径 -->
+		<AddionFailing>0.9</AddionFailing><!-- 衰退半径 -->
+		<AddionFailRadius>1</AddionFailRadius><!-- 附加衰退 -->
+		
+		<Attenuation>0.1</Attenuation><!-- 衰减 -->
+		<Absorption>0.8</Absorption><!-- 吸收 -->
+		<Accommodate>40</Accommodate> <!-- 容纳空间 -->
+	</Ling>
+	<Element>
+		<Kind>Jin</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>FFFF0088</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_MuLingJingYC" Parent="RockBase">
+	<TexPath>Spr\object\MuLingJingYC.png</TexPath>
+	<ThingName>木灵晶</ThingName>	
+	<Desc>灵晶与天地灵根通过“和而为一”特殊法门炼制而成，行属木，“成独秀”的成熟作之一。</Desc>
+	<Rate>9</Rate>
+	<Beauty>20</Beauty>
+	<ElementKind>Mu</ElementKind>
+	<Item Lable="LingStone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3250" FriendPoint="2"/>
+				<SalePrice Value="1750" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5250" />
+				<SalePrice Value="1770" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard2</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+				<NamePrefix>木灵晶</NamePrefix>
+				<CostMultiplier>1</CostMultiplier>
+				
+				<RateWhenBeMain>9</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.8</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>20</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<Elixir>
+			<Ling>550000</Ling>
+			<Modifier>Dan_LingCrystal</Modifier>
+		</Elixir>
+		<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "5"/>
+					<Item name = "Item_MuEssence" count = "1"/>
+				</CostItems>
+		</BeMade> 
+	</Item>
+	<Ling>
+		<AddionLing>85</AddionLing><!-- 附加灵气 -->
+		<AddionRadius>2</AddionRadius><!-- 附加半径 -->
+		<AddionFailing>0.9</AddionFailing><!-- 衰退半径 -->
+		<AddionFailRadius>1</AddionFailRadius><!-- 附加衰退 -->
+		
+		<Attenuation>0.1</Attenuation><!-- 衰减 -->
+		<Absorption>0.8</Absorption><!-- 吸收 -->
+		<Accommodate>40</Accommodate> <!-- 容纳空间 -->
+	</Ling>
+	<Element>
+		<Kind>Mu</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>00FF00FF</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_ShuiLingJingYC" Parent="RockBase">
+	<TexPath>Spr\object\ShuiLingJingYC.png</TexPath>
+	<ThingName>水灵晶</ThingName>	
+	<Desc>灵晶与天地灵根通过“和而为一”特殊法门炼制而成，行属水，“成独秀”的成熟作之一。</Desc>
+	<Rate>9</Rate>
+	<Beauty>20</Beauty>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="LingStone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3250" FriendPoint="2"/>
+				<SalePrice Value="1750" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5250" />
+				<SalePrice Value="1770" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard2</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+				<NamePrefix>水灵晶</NamePrefix>
+				<CostMultiplier>1</CostMultiplier>
+				
+				<RateWhenBeMain>9</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.8</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>20</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<Elixir>
+			<Ling>550000</Ling>
+			<Modifier>Dan_LingCrystal</Modifier>
+		</Elixir>
+		<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "5"/>
+					<Item name = "Item_ShuiEssence" count = "1"/>
+				</CostItems>
+		</BeMade> 
+	</Item>
+	<Ling>
+		<AddionLing>85</AddionLing><!-- 附加灵气 -->
+		<AddionRadius>2</AddionRadius><!-- 附加半径 -->
+		<AddionFailing>0.9</AddionFailing><!-- 衰退半径 -->
+		<AddionFailRadius>1</AddionFailRadius><!-- 附加衰退 -->
+		
+		<Attenuation>0.1</Attenuation><!-- 衰减 -->
+		<Absorption>0.8</Absorption><!-- 吸收 -->
+		<Accommodate>40</Accommodate> <!-- 容纳空间 -->
+	</Ling>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>87CEFF88</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_HuoLingJingYC" Parent="RockBase">
+	<TexPath>Spr\object\HuoLingJingYC.png</TexPath>
+	<ThingName>火灵晶</ThingName>	
+	<Desc>灵晶与天地灵根通过“和而为一”特殊法门炼制而成，行属火，“成独秀”的成熟作之一。</Desc>
+	<Rate>9</Rate>
+	<Beauty>20</Beauty>
+	<ElementKind>Huo</ElementKind>
+	<Item Lable="LingStone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3250" FriendPoint="2"/>
+				<SalePrice Value="1750" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5250" />
+				<SalePrice Value="1770" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard2</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+				<NamePrefix>火灵晶</NamePrefix>
+				<CostMultiplier>1</CostMultiplier>
+				
+				<RateWhenBeMain>9</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.8</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>20</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<Elixir>
+			<Ling>550000</Ling>
+			<Modifier>Dan_LingCrystal</Modifier>
+		</Elixir>
+		<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "5"/>
+					<Item name = "Item_HuoEssence" count = "1"/>
+				</CostItems>
+		</BeMade> 
+	</Item>
+	<Ling>
+		<AddionLing>85</AddionLing><!-- 附加灵气 -->
+		<AddionRadius>2</AddionRadius><!-- 附加半径 -->
+		<AddionFailing>0.9</AddionFailing><!-- 衰退半径 -->
+		<AddionFailRadius>1</AddionFailRadius><!-- 附加衰退 -->
+		
+		<Attenuation>0.1</Attenuation><!-- 衰减 -->
+		<Absorption>0.8</Absorption><!-- 吸收 -->
+		<Accommodate>40</Accommodate> <!-- 容纳空间 -->
+	</Ling>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>FF000088</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_TuLingJingYC" Parent="RockBase">
+	<TexPath>Spr\object\TuLingJingYC.png</TexPath>
+	<ThingName>土灵晶</ThingName>	
+	<Desc>灵晶与天地灵根通过“和而为一”特殊法门炼制而成，行属土，“成独秀”的成熟作之一。</Desc>
+	<Rate>9</Rate>
+	<Beauty>20</Beauty>
+	<ElementKind>Tu</ElementKind>
+	<Item Lable="LingStone">
+		<Prices>
+			<TalkType>1</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3250" FriendPoint="2"/>
+				<SalePrice Value="1750" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5250" />
+				<SalePrice Value="1770" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy1</li>
+			<li>Hard2</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMaterial>
+				<NamePrefix>土灵晶</NamePrefix>
+				<CostMultiplier>1</CostMultiplier>
+				
+				<RateWhenBeMain>9</RateWhenBeMain>
+				<WorkSpeedCoefficientWhenBeMain>1.8</WorkSpeedCoefficientWhenBeMain>
+				
+				<BeautyWhenBeMain>20</BeautyWhenBeMain>
+				<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+		<Elixir>
+			<Ling>550000</Ling>
+			<Modifier>Dan_LingCrystal</Modifier>
+		</Elixir>
+		<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingCrystal" count = "5"/>
+					<Item name = "Item_TuEssence" count = "1"/>
+				</CostItems>
+		</BeMade> 
+	</Item>
+	<Ling>
+		<AddionLing>85</AddionLing><!-- 附加灵气 -->
+		<AddionRadius>2</AddionRadius><!-- 附加半径 -->
+		<AddionFailing>0.9</AddionFailing><!-- 衰退半径 -->
+		<AddionFailRadius>1</AddionFailRadius><!-- 附加衰退 -->
+		
+		<Attenuation>0.1</Attenuation><!-- 衰减 -->
+		<Absorption>0.8</Absorption><!-- 吸收 -->
+		<Accommodate>40</Accommodate> <!-- 容纳空间 -->
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+		<Value>12</Value>         
+		<Radius>5</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>8B4513FF</Color>
+	</Light>
+	</ThingDef>
+	
+</List></ThingDefs>

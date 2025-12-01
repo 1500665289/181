@@ -1,0 +1,73 @@
+<ThingDefs><List>
+	<!--system下的item名称不能随意更改-->
+	
+	<ThingDef Type="Item" Name="Item_LingQiShuiYC" Parent="DrugBase">
+	<ThingName>灵气水</ThingName>
+	<TexPath>res\Sprs\object\object_AbucketOfWater</TexPath>	
+	<Desc>摄灵石之气，度于水内，食之，能补气之损，引灵助修也。是普通灵石的3倍效果。\n\n超脱于“很好用”精炼法，成作于而立，乃先贤“成独秀”“归元和一”之念，因灵气蕴于水中，故唤作灵气水。</Desc>
+	<Rate>5</Rate>
+	<Beauty>6</Beauty>
+	<MaxStack>9999</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	<Item Lable="Drug">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>50</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="10" />
+				<SalePrice Value="4" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="20" />
+				<SalePrice Value="4" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="0" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>水</FabaoSuffix>
+		<BeMaterial>
+				<NamePrefix></NamePrefix>
+				<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<PhysicalLables>
+			<li>Liquid</li>
+		</PhysicalLables>
+		<BeMade>
+				<WorkToMake>10</WorkToMake>
+				<CostItems>
+				    <Item name = "Item_Water" count = "2"/>
+					<Item name = "Item_LingStone" count = "200"/>
+				</CostItems>
+		</BeMade>
+        <Elixir>
+			<Ling>5000</Ling>
+			<Modifier>Dan_LingQiShuiYC</Modifier>
+		</Elixir>		
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Water>50</Water>
+		</Food>
+		<Rot>
+			<RotSpeed>0.005</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>2</Radius>
+		<Color>358BA7FF</Color>
+	</Light>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+</List></ThingDefs>

@@ -1,0 +1,299 @@
+<ThingDefs><List>
+	
+	
+	<ThingDef Type="Plant" Name="LingZhiBase" Parent="TreeBase">
+	<ThingName></ThingName>
+	<Desc></Desc>
+	
+	<Rate>12</Rate>
+	<SelectAble>1</SelectAble>
+	<CastShadow>0</CastShadow>
+	<Beauty>25</Beauty>
+	<UseHitPoints>1</UseHitPoints>
+	<MaxHitPoints>9000</MaxHitPoints>
+	<BlockLight>1</BlockLight>
+	<ColliderKind>Across</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[1,1,1],
+		[1,3,1],
+		[1,1,1],
+		</Data>
+	</Collider>
+	<Flammability>
+		<Flammability>-10</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>9999</BurningPoint>
+	</Flammability>
+	
+	<Plant Kind="HighPlant">
+		
+		<WildClusterSizeRangemin>0</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>0</WildClusterSizeRangemax>
+		<WildClusterRadius>0</WildClusterRadius>
+		
+		<WitherAble>0</WitherAble>
+		<!-- 
+		<HarvestDays>1120</HarvestDays>
+		<GrowDays>560</GrowDays> -->
+		
+		<GrowDays>112</GrowDays>
+		
+		<RestBegin>0</RestBegin>
+		<RestEnd>0</RestEnd>
+		
+		<VisualSizeMin>0.2</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>		
+		
+		<TempMin>-120</TempMin>
+		<TempMax>200</TempMax>
+		<FertilityMin>1.6</FertilityMin>
+		<FertilityMax>3</FertilityMax>
+		<LingMin>200</LingMin>
+		<LingMax>2000</LingMax>
+		<GrowGlowMin>20</GrowGlowMin>
+		<GrowGlowMax>140</GrowGlowMax>	
+		
+		<BaseLingCost>0.004</BaseLingCost>
+		<YunYangInterval>0</YunYangInterval>
+		<LingShaSpeedCoefficient>0.2</LingShaSpeedCoefficient>
+	</Plant>
+	
+	<Harvest>
+		<HarvestWork>50</HarvestWork> 
+		<DropWork>300</DropWork>   	
+		<HarvestValueMin>1</HarvestValueMin>  
+		<LogValueMin>0</LogValueMin>
+		<HarvestFailable>0</HarvestFailable>  
+	</Harvest>
+	
+	<Fertility>
+		<Value>1</Value>
+		<Radius>5</Radius>
+		<FailRadius>1</FailRadius>
+		<Failing>0.9</Failing>
+		<SkipSelf>1</SkipSelf>
+	</Fertility>
+	
+	<Ling>
+		<AddionLing>80</AddionLing>
+		<AddionRadius>5</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		<SkipSelf>2</SkipSelf>
+		
+		<Attenuation>0.5</Attenuation>
+		<Absorption>0.5</Absorption>
+		<Accommodate>400</Accommodate>
+	</Ling>
+	</ThingDef>
+
+	
+	<ThingDef Type="Plant" Name="TreeTDSSYC" Parent="LingZhiBase">
+	<ThingName>天道圣树</ThingName>
+	<Desc>本是上古时期生长在登仙台的寻常小树，在经年累月的灵气和道韵的滋养诞生灵韵，能感应天地孕育圣果。</Desc>
+	
+	<TexPath>Spr/plant/TreeTDSSYC.png</TexPath>
+	<Rate>12</Rate>
+    <Beauty>36</Beauty>
+	<ElementKind>Mu</ElementKind>
+	<Light>
+		<Value>50</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>3</Radius>
+		<Color>80FF56C6</Color>
+	</Light>
+	<Ling>
+		<AddionLing>300</AddionLing>
+		<AddionRadius>5</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		<SkipSelf>2</SkipSelf>
+		
+		<Attenuation>0.5</Attenuation>
+		<Absorption>0.5</Absorption>
+		<Accommodate>2000</Accommodate>
+	</Ling>
+	<Plant>
+		<TexLing>
+			<GrowTex1>Spr/plant/TreeTDSSYC.png</GrowTex1>
+			<HarvestTex0>Spr/plant/TreeTDSSYC.png</HarvestTex0>
+			<HarvestTex1>Spr/plant/TreeTDSSYC.png</HarvestTex1>
+			<HarvestTex2>Spr/plant/TreeTDSSYC.png</HarvestTex2>
+		</TexLing>
+		<SnowRenderData>
+			<x>3.1</x>
+			<y>4.0</y>
+			<z>1.5</z>
+		</SnowRenderData>
+		
+		<BaseLingCost>0.0001</BaseLingCost>
+		
+		<VisualSizeMin>0.4</VisualSizeMin>
+		<VisualSizeMax>1.2</VisualSizeMax>
+		
+		<ReproduceRadius>0</ReproduceRadius>
+		
+		<GrowDays>90</GrowDays>
+		<HarvestDays>24</HarvestDays>
+		
+		<TempMin>-100</TempMin>
+		<TempMax>100</TempMax>
+		<ElementRange>
+			<ElementKind>Mu</ElementKind>
+			<Min>1</Min>
+			<Max>2</Max>
+		</ElementRange>	
+
+		<LingShaSpeed>0.001</LingShaSpeed>
+		<LingZhiR>5</LingZhiR>
+		<JiaoGanModifierGT0>Modifier_LingZhi_GT0_Mu</JiaoGanModifierGT0>
+		<JiaoGanModifierLT0>Modifier_LingZhi_LT0_Mu</JiaoGanModifierLT0> 
+	</Plant>
+	
+	<Harvest>
+		<HarvestTag>
+			<li>Cut</li>
+			<li>StandCollection</li>
+		</HarvestTag>
+
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_TianDaoguoYC</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_TianDaoguoYC</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li>
+			
+		</HarvestItems>
+		
+		<DropItems>
+			<li>
+				<ThingDef>Item_Wood</ThingDef>
+				<Count>1</Count>
+			</li>
+		</DropItems>  
+	</Harvest>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Plant" Name="TreePanTaoShuYC" Parent="LingZhiBase">
+	<ThingName>蟠桃树</ThingName>
+	<Desc>仙界之树，能结蟠桃，蟠桃食用后能延寿五百载。\n蟠桃树也可生长在下界，灵气极为浓郁的地方方可生长。</Desc>
+	
+	<TexPath>Spr/plant/TreePangTaoShuWJGYC.png</TexPath>
+	<Rate>10</Rate>
+    <Beauty>24</Beauty>
+	<ElementKind>Mu</ElementKind>
+	<Light>
+		<Value>20</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>2</Radius>
+		<Color>FFFFFF</Color>
+	</Light>
+	<Plant>
+		<TexLing>
+			<GrowTex1>Spr/plant/TreePangTaoShuWJGYC.png</GrowTex1>
+			<HarvestTex0>Spr/plant/TreePangTaoShuWJGYC.png</HarvestTex0>
+			<HarvestTex1>Spr/plant/TreePangTaoShuWJGYC.png</HarvestTex1>
+			<HarvestTex2>Spr/plant/TreePangTaoShuWJGYC.png</HarvestTex2>
+		</TexLing>
+		<SnowRenderData>
+			<x>3.1</x>
+			<y>4.0</y>
+			<z>1.5</z>
+		</SnowRenderData>
+		
+		<BaseLingCost>0.0001</BaseLingCost>
+		
+		<VisualSizeMin>0.3</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>
+		
+		<ReproduceRadius>0</ReproduceRadius>
+		
+		<GrowDays>120</GrowDays>
+		<HarvestDays>36</HarvestDays>
+		<TempMin>-100</TempMin>
+		<TempMax>100</TempMax>
+		<ElementRange>
+			<ElementKind>Mu</ElementKind>
+			<Min>1</Min>
+			<Max>2</Max>
+		</ElementRange>	
+
+		<LingShaSpeed>0.01</LingShaSpeed>
+		<LingZhiR>5</LingZhiR>
+		<JiaoGanModifierGT0>Modifier_LingZhi_GT0_Mu</JiaoGanModifierGT0>
+		<JiaoGanModifierLT0>Modifier_LingZhi_LT0_Mu</JiaoGanModifierLT0> 
+	</Plant>
+	
+	<Harvest>
+		<HarvestTag>
+			<li>Cut</li>
+			<li>StandCollection</li>
+		</HarvestTag>
+
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_PanTaoYC</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_PanTaoYC</ThingDef>
+				<Count>1</Count>
+				<Rate>0.25</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_PanTaoYC</ThingDef>
+				<Count>1</Count>
+				<Rate>0.15</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_PanTaoWood</ThingDef>
+				<Count>1</Count>
+				<Rate>1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_PanTaoWood</ThingDef>
+				<Count>1</Count>
+				<Rate>0.25</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_PanTaoWood</ThingDef>
+				<Count>1</Count>
+				<Rate>0.15</Rate>
+			</li>
+			
+		</HarvestItems>
+		
+		<DropItems>
+			<li>
+				<ThingDef>Item_PanTaoWood</ThingDef>
+				<Count>2</Count>
+			</li>
+		</DropItems>  
+	</Harvest>
+	<Ling>
+		<AddionLing>150</AddionLing>
+		<AddionRadius>5</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>1</AddionFailRadius>
+		<SkipSelf>2</SkipSelf>
+		
+		<Attenuation>0.5</Attenuation>
+		<Absorption>0.5</Absorption>
+		<Accommodate>1500</Accommodate>
+	</Ling>
+	</ThingDef>
+	
+	
+</List></ThingDefs>

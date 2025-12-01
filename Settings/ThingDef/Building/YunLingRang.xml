@@ -1,0 +1,136 @@
+﻿<ThingDefs><List>
+
+		
+		<ThingDef Type="Building" Name="FillFanRangYC" Parent="FillBase">
+			<Color>EEEE00FF</Color>
+			<ThingName>铺设凡壤</ThingName>
+			<Desc>以土填之，造凡壤。可栽凡植于其上。</Desc>
+			<Building>
+				<FillTarrain>FanRangYC</FillTarrain>
+				<TerrainAffordanceNeeded>GroundShallowWater</TerrainAffordanceNeeded>
+				<BeMade>
+					<WorkToMake>3600</WorkToMake>
+				</BeMade>
+			</Building>
+		</ThingDef>
+
+     <ThingDef Type="Building" Name="FillWoWoTu" Parent="FillBase">	 
+		<Color>EEEE00FF</Color>
+		<ThingName>铺设沃土</ThingName>
+		<Desc>大木埋于土，以水浇之，侯之，沃土成，可以种凡植也。其效2倍于凡壤。</Desc>
+		<Building>
+			<FillTarrain>WoWoTu</FillTarrain>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BeMade>
+				<WorkToMake>9600</WorkToMake>
+				<CostItems>
+					<Item name="Item_Wood" count="5"/>
+					<Item name="Item_Water" count="1"/>
+				</CostItems>
+			</BeMade>
+		</Building>
+	</ThingDef>
+
+	<ThingDef Type="Building" Name="FillTongLingRang" Parent="FillBase">	 
+		<Color>00FF00FF</Color>
+		<ThingName>铺设通灵壤</ThingName>
+		<Desc>大木埋于土，以灵气水浇之，侯之，通灵壤成，可以种灵植也。其效3倍于凡壤。</Desc>
+		<Building>
+			<FillTarrain>TongLingRang</FillTarrain>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BeMade>
+				<WorkToMake>12000</WorkToMake>
+				<CostItems>
+					<Item name="Item_Wood" count="5"/>
+					<Item name="Item_LingQiShuiYC" count="1"/>
+				</CostItems>
+			</BeMade>
+		</Building>
+	</ThingDef>
+
+    <ThingDef Type="Building" Name="FillLingRang" Parent="FillBase">	 
+		<Color>00FF00FF</Color>
+		<ThingName>铺设灵壤</ThingName>
+		<Desc>金丝灵木埋于土，以灵气水浇之，侯之，灵壤成，可以种灵植也。其效4倍于凡壤。</Desc>
+		<Building>
+			<FillTarrain>LingRang</FillTarrain>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BeMade>
+				<WorkToMake>14400</WorkToMake>
+				<CostItems>
+					<Item name="Item_HardWood" count="5"/>
+					<Item name="Item_LingQiShuiYC" count="1"/>
+				</CostItems>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="FillYunLingRang" Parent="FillBase">	 
+		<Color>00FF00FF</Color>
+		<ThingName>铺设蕴灵壤</ThingName>
+		<Desc>灵木埋于土，以灵气水浇之，侯之，蕴灵壤成，可以蕴灵植也。其效6倍于凡壤</Desc>
+		<Building>
+			<FillTarrain>YunLingRang</FillTarrain>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BeMade>
+				<WorkToMake>16800</WorkToMake>
+				<CostItems>
+					<Item name="Item_LingWood" count="5"/>
+					<Item name="Item_LingQiShuiYC" count="1"/>
+				</CostItems>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="FillYangLingRang" Parent="FillBase">	 
+		<Color>00FF00FF</Color>
+		<ThingName>铺设养灵壤</ThingName>
+		<Desc>梧桐神木埋于土，以灵气水浇之，侯之，养灵壤成，可以养灵植也。其效8倍于凡壤</Desc>
+		<Building>
+			<FillTarrain>YangLingRang</FillTarrain>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BeMade>
+				<WorkToMake>19200</WorkToMake>
+				<CostItems>
+					<Item name="Item_ParasolWood" count="1"/>
+					<Item name="Item_LingQiShuiYC" count="1"/>
+				</CostItems>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Building" Name="FillQianHu" Parent="FillBase">	 
+		<Color>98F5FFFF</Color>
+		<ThingName>生浅湖</ThingName>
+		<Desc>引水以生浅湖，其上可栽凡植也。</Desc>
+		<Building>
+			<FillTarrain>QianHu</FillTarrain>
+			<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+			<BeMade>
+				<WorkToMake>2400</WorkToMake>
+				<CostItems>
+					<Item name="Item_Water" count="100"/>
+				</CostItems>
+			</BeMade>
+		</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="FillLingHu" Parent="FillBase">	
+			<Color>98F5FFFF</Color>
+			<ThingName>生灵湖</ThingName>
+			<Desc>大灌灵气水以生湖，善也。</Desc>
+			<Building>
+				<FillTarrain>LingHuYC</FillTarrain>
+				<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+				<BeMade>
+					<WorkToMake>7200</WorkToMake>
+					<CostItems>
+						<Item name="Item_LingQiShuiYC" count="2"/>
+					</CostItems>
+				</BeMade>
+			</Building>
+		</ThingDef>
+	
+	
+	
+</List></ThingDefs>

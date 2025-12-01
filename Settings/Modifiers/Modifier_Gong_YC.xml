@@ -1,0 +1,39 @@
+<ModifierDefs><List>
+	<Modifier Name="Gong_MeiRiNongJingShang_YC" Type="Normal">
+		<DisplayName>Gong_MeiRiNongJingShang_YC</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,2,2,0,5</BaseFive>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="50"/> 	<!-- 提高心境 -->
+			<li Name="NpcLingMaxValue" BAddV="100"/> 	<!-- 根本灵气 -->
+			<li Name="BaseEmotionAddV" AddV="50"/> 		<!-- 基础情绪 -->
+			<li Name="LingAbsorbSpeed" AddP="100"/> 	<!-- 灵气恢复速度 -->
+			<li Name="PotentialOfBasepracticeAddValue" AddV="3"/> 		<!-- 潜力 -->
+			<li Name="DanMake_SpeedAddV" AddV="3"/> 	<!-- 炼丹速度 -->
+			<li Name="DanMake_YieldAddP" AddV="1"/> 	<!-- 炼丹成功率 -->
+			<li Name="NpcFight_SpellCastTimeAddP" AddP="-0.3"/> 	<!-- 术法CD -->
+			<li Name="NpcFight_SpellPowerAddP" AddP="16"/> 	<!-- 术法伤害和灵气消耗 -->
+		</Properties>
+	</Modifier> 
+	<Modifier Name="Gong_MeiRiNongJingXia_YC" Type="Normal">
+		<DisplayName>Gong_MeiRiNongJingXia_YC</DisplayName>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,3,3,0,10</BaseFive>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="100"/> 	<!-- 提高心境 -->
+			<li Name="PotentialOfBasepracticeAddValue" AddV="5"/> 	<!-- 潜力 -->
+			<li Name="NpcFight_SpellCastTimeAddP" AddP="-0.5"/> 	<!-- 术法CD -->
+			<li Name="LingAbsorbSpeed" AddP="200"/> 	<!-- 灵气恢复速度 -->
+			<li Name="NpcLingMaxValue" BAddV="20"/> 	<!-- 根本灵气 -->
+			<li Name="BaseEmotionAddV" AddV="100"/> 	<!-- 基础情绪 -->
+			<li Name="NpcFight_FabaoPowerAddP" AddP="5"/> 	<!-- 法宝伤害和灵气消耗 -->
+			<li Name="DanMake_SpeedAddV" AddV="7"/> 	<!-- 炼丹速度 -->
+			<li Name="DanMake_YieldAddP" AddV="2"/> 	<!-- 炼丹成功率 -->
+			<li Name="NpcFight_SpellPowerAddP" AddP="32"/> 	<!-- 术法伤害和灵气消耗 -->
+		</Properties>
+	</Modifier> 
+</List></ModifierDefs>

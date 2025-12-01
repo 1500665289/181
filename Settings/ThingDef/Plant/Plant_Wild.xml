@@ -1,0 +1,84 @@
+<ThingDefs><List>
+	
+	
+	
+	
+	<ThingDef Type="Plant" Name="YiZhongRaspberryYC" Parent="PlantBase">
+	
+	
+	<ThingName>异种龙涎果</ThingName>
+	
+	<TexPath>res/Sprs/scene_TemperateForest_plant/scene_gaomojiangguo_a</TexPath>
+	<Desc>龙涎果植株当中的异种，适应环境能力强。由于异种原因，生长更为缓慢。\n\n龙涎灌溉后的野果，其果实别有灵异，食用可以半天之内不饿不疲。但是一旦摘下会很快腐烂。\n\n凡土肥力情况下86天生长，76天成熟\n\n适宜环境温度：零下50到50</Desc>
+	
+	<SelectAble>1</SelectAble>
+	<Beauty>-1</Beauty>
+	<Rate>7</Rate>	
+	
+	<UseHitPoints>0</UseHitPoints>
+	<MaxHitPoints>150</MaxHitPoints>
+	
+	<Plant>
+		<PlantLayer>PlantLow</PlantLayer>
+		<WildClusterSizeRangemin>10</WildClusterSizeRangemin>
+		<WildClusterSizeRangemax>10</WildClusterSizeRangemax>
+		<WildClusterRadius>10</WildClusterRadius>
+		
+		<RipedTexPath>res/Sprs/scene_TemperateForest_plant/scene_gaomojiangguo_b</RipedTexPath>
+		<HarvestedTexPath></HarvestedTexPath>
+		<LeaflessTexPath></LeaflessTexPath>   
+		<SnowedTexPath></SnowedTexPath>
+		
+		<VisualSizeMin>0.6</VisualSizeMin>
+		<VisualSizeMax>1</VisualSizeMax>		
+		<SowRenderTags>plant</SowRenderTags>
+		<TempMin>-50</TempMin>
+		<TempMax>50</TempMax>
+		<LifespanFraction>80</LifespanFraction>
+		<GrowDays>86</GrowDays>
+		<HarvestDays>76</HarvestDays>
+		<ReproduceRadius>3</ReproduceRadius>	
+		<SnowRenderData>
+			<x>2.65</x>
+			<y>3.55</y>
+			<z>2</z>
+		</SnowRenderData>
+	</Plant>
+	<Harvest>
+		<HarvestWork>25</HarvestWork> 
+		<DropWork>25</DropWork> 			
+		<HarvestValueMin>0.8</HarvestValueMin>  
+		<HarvestFailable>0</HarvestFailable>  
+		    
+		<HarvestTag>
+			<li>SquatCollection</li>
+		</HarvestTag> 
+		
+		<HarvestItems>
+			<li>
+				<ThingDef>Item_Fruit</ThingDef>
+				<Count>5</Count>
+			</li>
+			<li>
+				<ThingDef>Item_Fruit</ThingDef>
+				<Count>5</Count>
+				<Rate>0.25</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_Fruit</ThingDef>
+				<Count>5</Count>
+				<Rate>0.25</Rate>
+			</li>
+			</HarvestItems>
+	</Harvest>
+	<Light>
+		<Value>15</Value>
+		<Failing>0.8</Failing>
+		<FailRadius>0</FailRadius>
+		<Radius>1</Radius>
+		<Color>FFCF00FF</Color>
+	</Light>
+	</ThingDef>	
+	
+	
+</List></ThingDefs>

@@ -1,0 +1,218 @@
+<ModifierDefs><List>
+	<Modifier Name="Dan_LingStone001" Type="Normal">
+		<DisplayName>灵气共鸣</DisplayName>
+		<Desc>利用灵石修炼，与灵气产生共鸣，能提高灵气恢复速度，并从根本上提高修炼速度。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="0.1"/>
+			<li Name="LingAbsorbSpeed" AddP="5"/>
+		</Properties>
+		<Moods>
+			<li>Mood_LingStone</li>
+		</Moods>
+	</Modifier> 
+	<Modifier Name="Dan_LingQiShuiYC" Type="Normal">
+		<DisplayName>灵气共鸣</DisplayName>
+		<Desc>饮用灵气水修炼，与灵气中度共鸣，能提高灵气恢复速度，并从根本上提高修炼速度，是普通灵石的3倍效果。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="0.3"/>
+			<li Name="LingAbsorbSpeed" AddP="15"/>
+		</Properties>
+		<Moods>
+			<li>Mood_ZhongLingQiGongNingYC</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_XianWeiLongXianYC" Type="Normal">
+		<DisplayName>仙味龙涎</DisplayName>
+		<Desc>享用味绝天下的仙味龙涎，三日乐不可支，龙精虎猛，无饥之患。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Properties>
+		    <li Name="WaterConsumeConstant" AddP="-1"/>
+		    <li Name="HappyConsumeConstant" AddP="-1"/>
+			<li Name="NutritionConsumeConstant" AddP="-1"/>
+			<li Name="FatigueConsumeConstant" AddP="-1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_XianPingLongXianYC" Type="Normal">
+		<DisplayName>仙品龙涎</DisplayName>
+		<Desc>享用天上仙珍仙品龙涎，九日乐极，龙精虎猛，无饥之患。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>5400</Duration>
+		<Display>1</Display>
+		<Modifiers>
+			<li>Modifier_Item_XianPingLongXianYC1</li>
+		</Modifiers>
+		<Properties>
+		    <li Name="WaterConsumeConstant" AddP="-10"/>
+		    <li Name="HappyConsumeConstant" AddP="-10"/>
+			<li Name="NutritionConsumeConstant" AddP="-10"/>
+			<li Name="FatigueConsumeConstant" AddP="-10"/>
+			<li Name="GlobalEfficiency" AddP="1"/>
+			<li Name="MoveSpeed" AddP="1"/>
+			<li Name="RecoveryPower" AddP="5"/>
+			<li Name="LingAbsorbSpeed" AddP="15"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_XianPingLongXianYC1" Type="Normal">
+		<DisplayName>仙品龙涎-子</DisplayName>
+		<Desc>享用天上仙珍仙品龙涎，提升少量根骨和灵气最大值。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<BaseFive>0,0.1,0,0,0</BaseFive>
+		<Properties>
+		    <li Name="NpcLingMaxValue" AddV="50"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_TianDaoguoYC" Type="Normal">
+		<DisplayName>道果</DisplayName>
+		<Desc>食用天道圣果后，九日内弟子能平心静气、增五维3成、助修炼。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>5400</Duration>
+		<Display>1</Display>
+		<BaseFive>3,3,3,3,3</BaseFive>
+		<Properties>
+		  <li Name="PracticeRateAddPFromDan" AddP="0.7"/>
+		  <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="1"/>
+		  <li Name="MindStateBaseValue" AddV="50"/>
+		  <li Name="SpeedOfMindStateCoefficient" AddP="-0.9"/>
+		  <li Name="LingAbsorbSpeed" AddP="100"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_LingTaoYC" Type="Normal">
+		<DisplayName>桃之灵效</DisplayName>
+		<Desc>食用灵桃后，得以延寿十年！</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+		  <li Name="MaxAge" AddV="10"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_PanTaoYC" Type="Normal">
+		<DisplayName>桃之神效</DisplayName>
+		<Desc>食用蟠桃后，得以延寿五百载，修仙无忧！</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+		  <li Name="MaxAge" AddV="500"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Modifier_Item_LongXianJing" Type="Normal">
+		<DisplayName>龙涎精</DisplayName>
+		<Desc>服用龙涎精，三日之内不会饥饿，不会疲劳</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NutritionConsumeConstant" AddP="-1"/>
+			<li Name="FatigueConsumeConstant" AddP="-1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="Dan_JinLingJingYC" Type="Normal">
+		<DisplayName>灵气共鸣</DisplayName>
+		<Desc>利用金灵晶修炼，与灵气深度共鸣，能提高灵气恢复速度，并从根本上提高修炼速度，是普通灵石的5倍效果。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>9000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="0.5"/>
+			<li Name="LingAbsorbSpeed" AddP="25"/>
+		</Properties>
+		<Moods>
+			<li>Mood_LingStone1</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="Dan_MuLingJingYC" Type="Normal">
+		<DisplayName>灵气共鸣</DisplayName>
+		<Desc>利用木灵晶修炼，与灵气深度共鸣，能提高灵气恢复速度，并从根本上提高修炼速度，是普通灵石的5倍效果。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>9000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="0.5"/>
+			<li Name="LingAbsorbSpeed" AddP="25"/>
+		</Properties>
+		<Moods>
+			<li>Mood_LingStone1</li>
+		</Moods>
+	</Modifier> 
+
+	<Modifier Name="Dan_ShuiLingJingYC" Type="Normal">
+		<DisplayName>灵气共鸣</DisplayName>
+		<Desc>利用水灵晶修炼，与灵气深度共鸣，能提高灵气恢复速度，并从根本上提高修炼速度，是普通灵石的5倍效果。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>9000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="0.5"/>
+			<li Name="LingAbsorbSpeed" AddP="25"/>
+		</Properties>
+		<Moods>
+			<li>Mood_LingStone1</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="Dan_HuoLingJingYC" Type="Normal">
+		<DisplayName>灵气共鸣</DisplayName>
+		<Desc>利用火灵晶修炼，与灵气深度共鸣，能提高灵气恢复速度，并从根本上提高修炼速度，是普通灵石的5倍效果。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>9000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="0.5"/>
+			<li Name="LingAbsorbSpeed" AddP="25"/>
+		</Properties>
+		<Moods>
+			<li>Mood_LingStone1</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="Dan_TuLingJingYC" Type="Normal">
+		<DisplayName>灵气共鸣</DisplayName>
+		<Desc>利用灵晶修炼，与灵气深度共鸣，能提高灵气恢复速度，并从根本上提高修炼速度，是普通灵石的5倍效果。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>9000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" BAddV="0.5"/>
+			<li Name="LingAbsorbSpeed" AddP="25"/>
+		</Properties>
+		<Moods>
+			<li>Mood_LingStone1</li>
+		</Moods>
+	</Modifier> 
+	
+	<Modifier Name="Modifier_Item_Dan_FabaoShuZengJia" Type="Normal">
+		<DisplayName>法宝数加1</DisplayName>
+		<Desc>最大法宝数加一</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoNum" AddV="1"/>
+		</Properties>
+	</Modifier> 
+</List></ModifierDefs>

@@ -1,0 +1,43 @@
+<DanFormulas><List>
+	
+	<!--金灵晶-->
+	<Dan Name="JinLingJingYC">
+		<Normal>1</Normal>
+		<ItemName>Item_JinLingJingYC</ItemName>
+		<Level>10</Level>
+		<SuccessRate>-0.8</SuccessRate>
+		<Count>4</Count>
+	</Dan>
+	<!--木灵晶-->
+	<Dan Name="MuLingJingYC">
+		<Normal>1</Normal>
+		<ItemName>Item_MuLingJingYC</ItemName>
+		<Level>10</Level>
+		<SuccessRate>-0.8</SuccessRate>
+		<Count>4</Count>
+	</Dan>
+	<!--水灵晶-->
+	<Dan Name="ShuiLingJingYC">
+		<Normal>1</Normal>
+		<ItemName>Item_ShuiLingJingYC</ItemName>
+		<Level>10</Level>
+		<SuccessRate>-0.8</SuccessRate>
+		<Count>4</Count>
+	</Dan>
+	<!--火灵晶-->
+	<Dan Name="HuoLingJingYC">
+		<Normal>1</Normal>
+		<ItemName>Item_HuoLingJingYC</ItemName>
+		<Level>10</Level>
+		<SuccessRate>-0.8</SuccessRate>
+		<Count>4</Count>
+	</Dan>
+	<!--土灵晶-->
+	<Dan Name="TuLingJingYC">
+		<Normal>1</Normal>
+		<ItemName>Item_TuLingJingYC</ItemName>
+		<Level>10</Level>
+		<SuccessRate>-0.8</SuccessRate>
+		<Count>4</Count>
+	</Dan>
+</List></DanFormulas>

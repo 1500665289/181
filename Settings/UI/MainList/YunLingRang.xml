@@ -1,0 +1,21 @@
+<MainList><List>	
+
+    <Data Kind="Builds" Type="种田大法" Unlock="1" Label="灵壤" CMDType="Build" Name="FillFanRangYC"/>
+	<Data Kind="Builds" Type="种田大法" Unlock="1" Label="灵壤" CMDType="Build" Name="FillWoWoTu"/>
+	<Data Kind="Builds" Type="种田大法" Unlock="1" Label="灵壤" CMDType="Build" Name="FillTongLingRang"/>
+	<Data Kind="Builds" Type="种田大法" Unlock="1" Label="灵壤" CMDType="Build" Name="FillLingRang"/>
+	<Data Kind="Builds" Type="种田大法" Unlock="1" Label="灵壤" CMDType="Build" Name="FillYunLingRang"/>
+	<Data Kind="Builds" Type="种田大法" Unlock="1" Label="灵壤" CMDType="Build" Name="FillYangLingRang"/>
+	<Data Kind="Builds" Type="种田大法" Unlock="1" Label="灵壤" CMDType="Build" Name="FillQianHu"/>
+	<Data Kind="Builds" Type="种田大法" Unlock="1" Label="灵壤" CMDType="Build" Name="FillLingHu"/>
+	<Data Kind="Builds" Type="种田大法" Unlock="1" Label="筑物" CMDType="Build" Name="DuXiuChuZhuo"/>
+	<Data Kind="Builds" Type="种田大法" Unlock="1" Label="筑物" CMDType="Build" Name="DuXiuYaoTai"/>
+	<Data Kind="Builds" Type="种田大法" Unlock="1" Label="筑物" CMDType="Build" Name="DuXiuWoodShed"/>
+	<Data Kind="Builds" Type="种田大法" Unlock="1" Label="筑物" CMDType="Build" Name="DuXiuHandWorkTable"/>
+	<Data Kind="Builds" Type="种田大法" Unlock="1" Label="筑物" CMDType="Build" Name="DuXiuJiangTai"/>
+	<Data Kind="Builds" Type="种田大法" Unlock="1" Label="筑物" CMDType="Build" Name="Building_ShouYuFang"/>
+	
+
+	
+	
+</List></MainList>

@@ -1,0 +1,83 @@
+﻿<Stories><List>
+
+
+	<Story Name="Secrets_NongJingShang"  Parent="BaseFillingStory">
+		<DisplayName>农经上篇传承</DisplayName>
+		<Desc>独秀仙秘境开启，相传农经上篇在此地。\n[NAME]来到[PLACE]，发现已经有很多修行者来此寻觅农经上篇的踪迹。</Desc>
+		<Selections>
+			<li>
+				<Display>演算天机</Display> 
+				<Condition>
+				<![CDATA[	
+				me:GetLuck() >= 4 
+				]]></Condition>
+				<Tip>机缘</Tip>
+				<OKResult>
+				<![CDATA[	
+				if me:GetLuck() <= 6 then
+					me:AddMsg(XT("[NAME]演算天机，在一处隐蔽之地找到此物。不及他人赶至，[NAME]轻松的取得所思之物。\n[NAME]先行走出秘境，不及暗自庆喜，[NAME]忽地查觉寻得之物有异样，定睛一看，寻得之物竟幻为他物!\n[NAME]掩面神伤，只叹与之无缘，忧然返回宗门。"));me:DropRandomItem("Esoterica");story:FinishSecret();
+				else
+					me:AddMsg(XT("天机显露，[NAME]迅速赶往显露的方位。不及众修士赶至，[NAME]已搜寻到传承之物，先行返回宗门"));me:DropEsoteric("Gong_MeiRiNongJingShang_YC");story:FinishSecret();
+				end				
+				]]></OKResult>
+				<NOResult>me:AddMsg(XT("[NAME]演算天机，算得农经细致方位。及[NAME]抵达天机显露之处，发现农经已然被捷足先登。[NAME]直接呼晚来一步，憾然返回宗门。"));story:FinishSecret();</NOResult>
+			</li>
+			<li>
+				<Display>仔细搜寻</Display> 
+				<Condition>me:GetLuck() >= me:RandomInt(5, 6) </Condition>
+				<Tip>机缘</Tip>
+				<OKResult>me:AddMsg(XT("在每一处挥洒大量神念，神念所至，[NAME]无一不了然于心。\n终在其他修士放弃搜寻纷纷归去之时，[NAME]在一处极为隐蔽角落寻到。\n机缘所致，[NAME]取得农经上篇，欣然返回宗门。"));me:DropEsoteric("Gong_MeiRiNongJingShang_YC");story:FinishSecret();</OKResult>
+			</li>
+			<li>
+				<Display>离开</Display>
+				<OKResult><![CDATA[	
+				me:AddMsg(XT("[NAME]内心天人交战，暗觉此时不够稳妥，转身离去。"));
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	<Story Name="Secrets_NongJingXia"  Parent="BaseFillingStory">
+		<DisplayName>农经下篇传承</DisplayName>
+		<Desc>独秀仙秘境开启，相传农经下篇在此地。\n[NAME]来到[PLACE]的秘境内仔细搜寻，不料已有人捷足先登。\n不料此人自视甚高，携农经招摇徐行，众多修士发觉，纷纷围而讨要功法。\n众人人欲夺，得者不愿，隧破口而骂“生而无父母，汝也！众人怒，遂战。\n[NAME]听闻动静，前来一观，时战况已然激烈。[NAME]前去争夺。</Desc>
+		<Selections>
+			<li>
+				<Display>力压群雄</Display> 
+				<Condition>
+				<![CDATA[	
+				me:GetGLevel() >= 7 
+				]]>
+				</Condition>
+				<Tip>金丹境</Tip>
+				<OKResult>
+				<![CDATA[	
+				if me:GetGLevel() <= 9 then
+					me:AddMsg(XT("[NAME]经一番厮杀，终夺得了农经。而后迅速远去，乔装之下，慎然返回宗门。"));me:DropEsoteric("Gong_MeiRiNongJingXia_YC");story:FinishSecret();me:AddDamgeFromCache(story.DamageCache,1);
+				else
+					me:AddMsg(XT("[NAME]展露强横修为与斗战之能，众人无不惊惧。斗战之下，众人不敌，纷纷遁逃。[NAME]得到传承，心中大喜，徐然返回宗门。"));me:DropEsoteric("Gong_MeiRiNongJingXia_YC");story:FinishSecret();
+				end				
+				]]>
+				</OKResult>
+				<NOResult>me:AddMsg(XT("[NAME]欲败众敌，只叹棋差一招，败于强手，携伤遁逃，悄返回宗门。"));story:FinishSecret();me:AddDamgeFromCache(story.DamageCache,2);</NOResult>
+			</li>
+			<li>
+				<Display>伺机夺取</Display> 
+				<Condition>me:GetLuck() >= me:RandomInt(7, 8) </Condition>
+				<Tip>机缘</Tip>
+				<OKResult>me:AddMsg(XT("[NAME]静观其变，在众人争到不可开交之时忽然出手，夺取传承，迅速返回宗门。"));me:DropEsoteric("Gong_MeiRiNongJingXia_YC");story:FinishSecret();</OKResult>
+				<NOResult>me:AddMsg(XT("[NAME]静观其变，在众人争到不可开交的时候悍然出手,却反成为众矢之的，被围攻受伤，只得携伤逃回宗门。"));story:FinishSecret();me:AddDamgeFromCache(story.DamageCache,1);</NOResult>
+			</li>
+			<li>
+				<Display>离开</Display>
+				<OKResult><![CDATA[	
+				me:AddMsg(XT("[NAME]自知修为及斗法之能微末，不敌众人。转身离去"));
+				]]>
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+</List></Stories>

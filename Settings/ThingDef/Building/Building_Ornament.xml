@@ -1,0 +1,205 @@
+﻿<ThingDefs><List>
+	
+	
+	<ThingDef Type="Building" Name="Building_ShouYuFang" Parent="OrnamentBase">
+	<TexPath>Spr\object\ShouHuShu.png</TexPath>
+	<TexScale>1</TexScale>
+	<BlockLight>0</BlockLight>
+    <SelectAble>1</SelectAble>		
+	<ThingName>守御坊</ThingName>	
+	<Desc>乃一匠人奇坊，建其之人已不可寻，世人只知其曰守御坊。寻常以为纳宝、炼金、锻器之用，若有敌犯，激之，敌退也。</Desc>
+	<Tags>
+		<Tag Name="Zhen" Level="1"/>
+		
+	</Tags>
+	<Beauty>36</Beauty>
+	<ShadowSize>
+		<x>1</x>
+		<y>1</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[4,0,0,4],
+		[0,1,3,0],
+		[4,0,0,4],
+		</Data>
+		<Offset>
+			<y>1.25</y>
+			<x>-0.55</x>
+		</Offset>
+	</Collider>
+	
+	<Flammability>
+		<Flammability>0</Flammability>
+	</Flammability>
+	<Building>
+	    <CanMakeRoom>0</CanMakeRoom>
+		<ShowFree>1</ShowFree>
+		<NoFengshui>0</NoFengshui>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<Perfab>Building/Prefabs/Jianzhu</Perfab>
+		<BePackage>1</BePackage>
+		<MaxWorker>4</MaxWorker>
+		<WorkAnimation>assemble</WorkAnimation>
+		<HelperClass>BuildingHelperZhen</HelperClass>
+		<WorkTexPath>Spr\object\ShouHuShuGZ.png</WorkTexPath>
+		<MaxCount>3</MaxCount>
+		<BagDrop>0</BagDrop>
+		<WorkAnimation>iron</WorkAnimation>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+			    <Stuff name = "WoodBlock"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>16</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_RoughWoodBlock" count = "12"/>
+			</CostItems>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.4</x>
+			<y>4</y>
+			<z>1</z>
+		</SnowRenderData>
+        <Drive>
+			<StuffCategories>
+				<Stuff name = "Wood"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<DrivingTexPath>Spr\object\ShouHuShuGZ.png</DrivingTexPath>
+			<CostStuffCount>15</CostStuffCount>
+			<Duration>0.01</Duration>
+			<DriveJustProdece>1</DriveJustProdece>
+			<RateMin>0</RateMin>
+			<RateMax>6</RateMax>
+		</Drive>
+		<ProducePriority>1</ProducePriority>
+		<ProduceKind>Smithing</ProduceKind>
+		<Produces>
+		    <Produce>
+				<ThingDef>Item_IronBlock</ThingDef>
+				<Display>铁锭</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_CopperBlock</ThingDef>
+				<Display>火铜锭</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SilverBlock</ThingDef>
+				<Display>寒晶锭</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_DarksteelBlock</ThingDef>
+				<Display>玄铁锭</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_CopperBlock1</ThingDef>
+				<Display>火精锭</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SilverBlock1</ThingDef>
+				<Display>寒精锭</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_StarEssenceBlock</ThingDef>
+				<Display>星髓锭</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Other_PuppetTest</ThingDef>
+				<Display>傀儡</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SysAxe</ThingDef>
+				<Display>斧</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SysPickaxe</ThingDef>
+				<Display>镐</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SysSickle</ThingDef>
+				<Display>农具</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>SP_Bow1</ThingDef>
+				<Display>捕兽弓</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WeaponBow</ThingDef>
+				<Display>弓</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WeaponKnife</ThingDef>
+				<Display>刀</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WeaponLance</ThingDef>
+				<Display>枪</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WeaponSword</ThingDef>
+				<Display>剑</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WeaponHalbert</ThingDef>
+				<Display>锤</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+			<ThingDef>Item_WeaponAxeRing</ThingDef>
+			<Display>环</Display>
+			<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WeaponFuChen</ThingDef>
+				<Display>拂尘</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WeaponDaoSword</ThingDef>
+				<Display>道剑</Display>
+				<Count>1</Count>
+		   </Produce>
+		</Produces>		
+	</Building>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>0</Radius>
+		<Failing>1</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	
+	<Light>
+		<Value>60</Value>
+		<Failing>0.9</Failing>
+		<FailRadius>5</FailRadius>
+		<Radius>5</Radius>
+		<Color>358BA7FF</Color>
+	</Light>
+</ThingDef>	
+	
+	
+	
+</List></ThingDefs>

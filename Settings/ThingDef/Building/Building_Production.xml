@@ -1,0 +1,809 @@
+﻿<ThingDefs><List>
+	
+	
+	<ThingDef Type="Building" Name="DuXiuChuZhuo" Parent="ProductionBase">
+	<ThingName>独秀厨桌</ThingName>	
+	<Desc>先贤“成独秀”经长期实践检验真理后改良的厨桌。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_cooktop1a</TexPath>
+	<!--<TexScale>0.65</TexScale>-->
+	<SelectAble>1</SelectAble>	
+	<TexScale>1.15</TexScale>
+	<CastShadow>1</CastShadow>
+	<Beauty>1</Beauty>
+	<BlockLight>1</BlockLight>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1,1],
+		[7,1],
+		</Data>
+<!--		<Offset>
+			<x>-0.52</x>
+			<y>0.54</y>
+		</Offset>-->
+		<OffsetGroup>
+			<li><x>-0.45</x><y>-0.15</y></li><!--上-->
+			<li><x>-0.45</x><y>0.9</y></li><!--右-->
+			<li><x>0.45</x><y>1.1</y></li><!--下-->
+			<li><x>0.45</x><y>-0.1</y></li><!--左-->
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0.8" Y="-0.07" Ang="1" Dir="Down"/>
+			<li Index="0" X="-0.12" Y="-0.35" Ang="1" Dir="Left"/>
+			<li Index="0" X="-0.82" Y="-0.2" Ang="1" Dir="Up"/>
+			<li Index="0" X="0" Y="0.82" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+
+	<Heat>
+		<Value>1</Value>
+		<Radius>1</Radius>
+		<RoomValue>30</RoomValue>
+		<Failing>0.3</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Building>
+		<BePackage>1</BePackage>
+		<RoomKind>Kitchen</RoomKind>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>cook</WorkAnimation>
+		<WorkTexPath>res/Sprs/buildingnew/building_cooktop1b</WorkTexPath>
+		<Orientation>F,B,R</Orientation>
+		<BeMade>
+			<WorkToMake>50</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+			    <Stuff name = "Wood"/>
+				<Stuff name = "WoodBlock"/>
+			    <Stuff name = "Metal"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "Rock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>32</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.9</x>
+			<y>3.75</y>
+			<z>1</z>
+		</SnowRenderData>
+		<Drive>
+			<StuffCategories>
+				<Stuff name = "Wood"/>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>16</CostStuffCount>			
+			<Duration>0.05</Duration>
+			<DriveJustProdece>1</DriveJustProdece>
+			<RateMin>0</RateMin>
+			<RateMax>3</RateMax>
+		</Drive>
+		<ProducePriority>1</ProducePriority>
+		<ProduceKind>Cooking</ProduceKind>
+		<Produces>
+		    <Produce>
+				<ThingDef>Item_Cake</ThingDef>
+				<Display>饼</Display>
+				<Count>8</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Jerky</ThingDef>
+				<Display>肉干</Display>
+				<Count>8</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_PreservedFruit</ThingDef>
+				<Display>李氏龙涎果脯</Display>
+				<Count>1</Count>
+			</Produce>
+			
+			<Produce>
+				<ThingDef>Item_HomeFood</ThingDef>
+				<Display>家常菜</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_DeliciousFood</ThingDef>
+				<Display>佳肴</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_DelicacyFood</ThingDef>
+				<Display>珍馐</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_XianWeiLongXianYC</ThingDef>
+				<Display>仙味龙涎</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_XianPingLongXianYC</ThingDef>
+				<Display>仙味龙涎</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LiXiangLu1</ThingDef>
+				<Display>梨香露</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_XingLingJing</ThingDef>
+				<Display>杏灵精</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LongXianJing</ThingDef>
+				<Display>龙涎精</Display>
+				<Count>4</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	<Element>
+		<Kind>Huo</Kind>
+		<Value>4</Value>         
+		<Radius>2</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>2</Radius>
+		<Color>358BA7FF</Color>
+	</Light>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="LingJing" Parent="ProductionBase">
+	<ThingName>水井</ThingName>	
+	<Desc>可以从中打水。水井中的水相比野外的水更卫生，因此不易生病。</Desc>
+	<Tags>
+		<Tag Name="Water" Level="1"/>
+	</Tags>
+	<TexPath>res/Sprs/buildingnew/building_well1a</TexPath>
+	<BlockLight>1</BlockLight>
+	<TexScale>1.1</TexScale>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>0</CastShadow>
+	<Beauty>5</Beauty>
+	<BlockLight>0</BlockLight>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[0,1,1,4],
+		[0,3,1,4],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.5</x><y>-0.1</y></li>
+			<li><x>-0.2</x><y>.8</y></li>
+			<li><x>0.5</x><y>0.9</y></li>
+			<li><x>0.3</x><y>-0.2</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0"  X="-0.25" Y="-0.3" Ang="-90" Dir="Down"/>
+			<li Index="1"  X="-0.25" Y="0.3" Ang="-90" Dir="Down"/>
+			<li Index="0"  X="0.25" Y="0.3" Ang="-90" Dir="Left"/>
+			<li Index="1"  X="-0.25" Y="0.3" Ang="-90" Dir="Left"/>
+			<li Index="0"  X="0.25" Y="-0.3" Ang="-90" Dir="Up"/>
+			<li Index="1"  X="0.25" Y="0.3" Ang="-90" Dir="Up"/>
+			<li Index="0"  X="0.25" Y="-0.3" Ang="-90" Dir="Right"/>
+			<li Index="1"  X="-0.25" Y="-0.3" Ang="-90" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Flammability>
+		<Flammability>0</Flammability>
+	</Flammability>
+	
+	<Building>
+		<WorkTexPath>res/Sprs/buildingnew/building_well1b</WorkTexPath>
+		<Orientation>F,B,R</Orientation>
+		<RoomKind>None</RoomKind>
+		<ShowFree>0</ShowFree>
+		<MaxWorker>3</MaxWorker>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>assemble</WorkAnimation>
+		<WorkAnimation>produce</WorkAnimation>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>6</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.25</x>
+			<y>4</y>
+			<z>1</z>
+		</SnowRenderData>
+		<ProducePriority>1</ProducePriority>
+		<ProduceKind>Handwork</ProduceKind>
+		<Produces>
+<!--		<Produce>
+				<ThingDef>Item_WoodPike</ThingDef>
+				<Display>木矛</Display>
+				<Count>1</Count>
+			</Produce>-->
+			
+			<Produce>
+				<ThingDef>Item_StarEssenceLeftover</ThingDef>
+				<Display>星髓角料</Display>
+				<Count>100</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	<Element>
+		<Kind>Shui</Kind>
+		<Value>5</Value>         
+		<Radius>2</Radius>
+		<Failing>0.5</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="DuXiuYaoTai" Parent="ProductionBase">	
+	<ThingName>独秀药台</ThingName>	
+	<Desc>先贤“成独秀”经长期实践检验真理后改良的药台。</Desc>
+	<TexPath>res/Sprs/buildingnew/building_PharmacyPlace1a</TexPath>
+	<TexScale>0.80</TexScale>
+	<BlockLight>1</BlockLight>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<Beauty>5</Beauty>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+			[1,3],
+			[4,0]
+		</Data>
+		<OffsetGroup>
+			<li><x>0.47</x><y>0.56</y></li>
+			<li><x>0.38</x><y>-0.36</y></li>
+			<li><x>-0.5</x><y>0.5</y></li>
+			<li><x>-0.41</x><y>0.65</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0.45" Y="0.54" Ang="1" Dir="Down"/>
+			<li Index="0" X="0.2" Y="-0.8" Ang="1" Dir="Left"/>
+			<li Index="0" X="-0.54" Y="-0.5" Ang="1" Dir="Up"/>
+			<li Index="0" X="-0.3" Y="0.4" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<BePackage>1</BePackage>
+		<SelectProduceStuff>0</SelectProduceStuff>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>produce</WorkAnimation>
+		<BeMade>
+			<WorkToMake>120</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "Wood"/>
+				<Stuff name = "WoodBlock"/>
+			    <Stuff name = "Metal"/>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "Rock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>32</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.8</x>
+			<y>3.68</y>
+			<z>1</z>
+		</SnowRenderData>
+		<ProduceKind>DrugProduct</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_Sys_RanSeYu</ThingDef>
+				<Display>染色玉</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Hemostatics</ThingDef>
+				<Display>金疮药</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SmallCycle</ThingDef>
+				<Display>小还丹</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Plaster</ThingDef>
+				<Display>接骨膏</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Anodyne</ThingDef>
+				<Display>止痛散</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_StoneEssenceDrug</ThingDef>
+				<Display>石髓散</Display>
+				<Count>5</Count>
+			</Produce>
+			
+			<Produce>
+				<ThingDef>Item_SilverGrit</ThingDef>
+				<Display>寒晶砂</Display>
+				<Count>10</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_CopperGrit</ThingDef>
+				<Display>火铜砂</Display>
+				<Count>10</Count>
+			</Produce>
+			
+			<Produce>
+				<ThingDef>Item_Laxative</ThingDef>
+				<Display>通泻散</Display>
+				<Count>3</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_WuDang_HuangJingFen</ThingDef>
+				<Display>黄精粉</Display>
+				<Count>10</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingQiShuiYC</ThingDef>
+				<Display>灵气水</Display>
+				<Count>2</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_YiYuanLingJiang</ThingDef>
+			<Display>一元灵浆</Display>
+				<Count>5</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	<Light>
+		<Value>30</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>2</Radius>
+		<Color>358BA7FF</Color>
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="DuXiuWoodShed" Parent="ProductionBase">	
+	<ThingName>独秀柴处</ThingName>
+	<Desc>先贤“成独秀”经长期实践检验真理后改良的砍柴处。</Desc>
+	<TexScale>0.85</TexScale>
+	<TexPath>res/Sprs/buildingnew/building_firewoodplace1a</TexPath>
+	<BlockLight>0</BlockLight>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>0</CastShadow>
+	<Beauty>24</Beauty>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+			[3,1],
+			[4,0],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.38</x><y>0.4</y></li>
+			<li><x>0.59</x><y>0.48</y></li>
+			<li><x>0.5</x><y>0.5</y></li>
+			<li><x>-0.58</x><y>-0.42</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0.114" Y="0.535" Ang="25" Dir="Down"/>
+			<li Index="0" X="0.215" Y="-0.68" Ang="1" Dir="Left"/>
+			<li Index="0" X="-0.36" Y="-0.54" Ang="1" Dir="Up"/>
+			<li Index="0" X="-0.22" Y="0.3" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<BePackage>1</BePackage>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>firewood2</WorkAnimation>
+		<WorkTexPath>res/Sprs/buildingnew/building_firewoodplace1b</WorkTexPath>
+		<Orientation>F,B,R</Orientation>
+		<BeMade>
+			<WorkToMake>30</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "WoodBlock"/>
+			</StuffCategories>
+			<CostStuffCount>4</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.05</x>
+			<y>3.76</y>
+			<z>1</z>
+		</SnowRenderData>
+		<ProduceKind>CutWood</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_RoughWoodBlock</ThingDef>
+				<Display>木料</Display>
+				<Count>5</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_HardWoodBlock</ThingDef>
+				<Display>金丝木料</Display>
+				<Count>5</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_ParasolWoodBlock</ThingDef>
+				<Display>梧桐木料</Display>
+				<Count>5</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingWoodBlock</ThingDef>
+				<Display>灵木料</Display>
+				<Count>5</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_PanTaoWoodBlock</ThingDef>
+				<Display>蟠桃木料</Display>
+				<Count>5</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="DuXiuHandWorkTable" Parent="ProductionBase">	
+	<ThingName>独秀工桌</ThingName>	
+	<Desc>先贤“成独秀”经长期实践检验真理后改良的工桌。</Desc>
+	<TexScale>0.85</TexScale>
+	<TexPath>res/Sprs/buildingnew/building_ManufacturingStation1a</TexPath>
+	<BlockLight>1</BlockLight>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<Beauty>9</Beauty>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+			[3,1],
+			[4,0],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.5</x><y>0.75</y></li>
+			<li><x>0.35</x><y>0.81</y></li>
+			<li><x>0.5</x><y>0.75</y></li>
+			<li><x>-0.3</x><y>-0.04</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0.55" Y="0.76" Ang="1" Dir="Down"/>
+			<li Index="0" X="0.67" Y="-0.6" Ang="1" Dir="Left"/>
+			<li Index="0" X="-0.46" Y="-0.4" Ang="1" Dir="Up"/>
+			<li Index="0" X="-0.5" Y="0.4" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<BePackage>1</BePackage>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>produce</WorkAnimation>
+		<WorkTexPath>res/Sprs/buildingnew/building_ManufacturingStation1b</WorkTexPath>
+		<Orientation>F,B,R</Orientation>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>8</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.13</x>
+			<y>3.9</y>
+			<z>1</z>
+		</SnowRenderData>
+		<ProducePriority>1</ProducePriority>
+		<ProduceKind>Handwork</ProduceKind>
+		<Produces>
+<!--		<Produce>
+				<ThingDef>Item_WoodPike</ThingDef>
+				<Display>木矛</Display>
+				<Count>1</Count>
+			</Produce>-->
+			<Produce>
+				<ThingDef>Item_WeaponWoodBow</ThingDef>
+				<Display>木弓</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Other_PuppetTest</ThingDef>
+				<Display>傀儡</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Umbrella</ThingDef>
+				<Display>伞</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Dice</ThingDef>
+				<Display>骰子</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SmallBell</ThingDef>
+				<Display>铃铛</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Bracelet</ThingDef>
+				<Display>手镯</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_Handkerchief</ThingDef>
+				<Display>手帕</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_PerfumeBag</ThingDef>
+				<Display>香囊</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SysAxe</ThingDef>
+				<Display>斧</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SysPickaxe</ThingDef>
+				<Display>镐</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SysSickle</ThingDef>
+				<Display>农具</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SysAcupuncture</ThingDef>
+				<Display>针灸</Display>
+				<Count>1</Count>
+			</Produce>
+			
+			<Produce>
+				<ThingDef>Item_WoodLeftover</ThingDef>
+				<Display>木角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_HardWoodLeftover</ThingDef>
+				<Display>金丝木角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_ParasolWoodLeftover</ThingDef>
+				<Display>梧桐木角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_PanTaoWoodLeftover</ThingDef>
+				<Display>蟠桃木角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingWoodLeftover</ThingDef>
+				<Display>灵木角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_BrownRockLeftover</ThingDef>
+				<Display>棕石角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_GrayRockLeftover</ThingDef>
+				<Display>灰石角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_MarbleLeftover</ThingDef>
+				<Display>大理石角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_JadeLeftover</ThingDef>
+				<Display>玉石角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SkyStoneLeftover</ThingDef>
+				<Display>天柱石角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingStoneLeftover</ThingDef>
+				<Display>灵石角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingCrystalLeftover</ThingDef>
+				<Display>灵晶角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_JinLingJingLeftoverYC</ThingDef>
+				<Display>金灵晶角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_MuLingJingLeftoverYC</ThingDef>
+				<Display>木灵晶角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_ShuiLingJingLeftoverYC</ThingDef>
+				<Display>水灵晶角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_HuoLingJingLeftoverYC</ThingDef>
+				<Display>火灵晶角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_TuLingJingLeftoverYC</ThingDef>
+				<Display>土灵晶角料</Display>
+				<Count>100</Count>
+			</Produce>
+			
+			<Produce>
+				<ThingDef>Item_IronRockLeftover</ThingDef>
+				<Display>铁矿角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_CopperRockLeftover</ThingDef>
+				<Display>火铜角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SilverRockLeftover</ThingDef>
+				<Display>寒晶角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_DarksteelRockLeftover</ThingDef>
+				<Display>玄铁角料</Display>
+				<Count>100</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_StarEssenceLeftover</ThingDef>
+				<Display>星髓角料</Display>
+				<Count>100</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="DuXiuJiangTai"  Parent="ProductionBase">	
+	<ThingName>独秀匠台</ThingName>
+	<Desc>先贤“成独秀”经长期实践检验真理后改良的石匠台</Desc>
+	<TexPath>res/Sprs/buildingnew/building_stonestation1a</TexPath>
+	<TexScale>0.9</TexScale>
+	<SelectAble>1</SelectAble>
+	<CastShadow>1</CastShadow>
+	<Beauty>5</Beauty>
+	<BlockLight>1</BlockLight>
+	<ShadowSize>
+		<x>1</x>
+		<y>0.2</y>
+	</ShadowSize>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+		[1,1],
+		[7,1],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.57</x><y>-0.46</y></li><!--后-->
+			<li><x>-0.28</x><y>0.77</y></li><!--右-->
+			<li><x>0.61</x><y>1.05</y></li><!--前-->
+			<li><x>0.3</x><y>-0.27</y></li><!--左-->
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0.96" Y="0" Ang="1" Dir="Down"/>
+			<li Index="0" X="-0.24" Y="-0.36" Ang="1" Dir="Left"/>
+			<li Index="0" X="-0.96" Y="0.2" Ang="1" Dir="Up"/>
+			<li Index="0" X="0.2" Y="0.7" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<BePackage>1</BePackage>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>CutStone</WorkAnimation>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>16</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.95</x>
+			<y>3.8</y>
+			<z>1</z>
+		</SnowRenderData>
+		<SelectProduceStuff>0</SelectProduceStuff>
+		<ProduceKind>StoneWork</ProduceKind>
+		<Produces>
+			<Produce>
+				<ThingDef>Item_BrownRockBlock</ThingDef>
+				<Display>棕石砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_GrayRockBlock</ThingDef>
+				<Display>灰石砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_MarbleBlock</ThingDef>
+				<Display>大理石砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_JadeBlock</ThingDef>
+				<Display>玉石砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_SkyStoneBlock</ThingDef>
+				<Display>天柱石砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingStoneBlock</ThingDef>
+				<Display>灵石砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_LingCrystalBlock</ThingDef>
+				<Display>灵晶砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_JinLingJingZhuanYC</ThingDef>
+				<Display>金灵晶砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_MuLJZhuanYC</ThingDef>
+				<Display>木灵晶砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_ShuiLingJingZhuanYC</ThingDef>
+				<Display>水灵晶砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_HuoLingJingZhuanYC</ThingDef>
+				<Display>火灵晶砖</Display>
+				<Count>4</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>Item_TuLingJingZhuanYC</ThingDef>
+				<Display>土灵晶砖</Display>
+				<Count>4</Count>
+			</Produce>
+		</Produces>
+	</Building>
+	</ThingDef>	
+</List></ThingDefs>

@@ -1,0 +1,303 @@
+﻿<ThingDefs><List>
+
+
+
+
+
+<ThingDef Type="Item" Name="Item_PanTaoWoodLeftover" Parent="LeftoverMaterialBase">
+	<ThingName>蟠桃木角料</ThingName>
+	<ElementKind>Mu</ElementKind>
+	<Desc>混杂了碎蟠桃木的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>a53b10</Color>
+	<Flammability>
+		<BurningPoint>1000</BurningPoint>
+	</Flammability>
+	<Beauty>0</Beauty>
+	<Rate>1</Rate>
+	<Item>
+		<Prices>
+			<TalkType>4</TalkType>
+			<BaseCount>100</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_PanTaoWood" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>蟠桃木</NamePrefix>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_wood2</StuffTexPath>
+			<ColorWhenBeFloor>a53b10</ColorWhenBeFloor>
+			<ColorWhenBeRoof>fc6b49</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1000</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>6</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+
+<ThingDef Type="Item" Name="Item_JinLingJingLeftoverYC" Parent="LeftoverMaterialBase">
+	<ThingName>金灵晶角料</ThingName>
+	<ElementKind>Jin</ElementKind>
+	<Desc>混杂了碎晶灵晶的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>fdef1d</Color>
+	<Flammability>
+		<BurningPoint>1600</BurningPoint>
+	</Flammability>
+	<Item>
+		<Prices>
+			<TalkType>4</TalkType>
+			<BaseCount>100</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_JinLingJingYC" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>金灵晶</NamePrefix>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_xingsui</StuffTexPath>
+			<ColorWhenBeFloor>FFA500FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>feed1a</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1600</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>6</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+
+<ThingDef Type="Item" Name="Item_MuLingJingLeftoverYC" Parent="LeftoverMaterialBase">
+	<ThingName>木灵晶角料</ThingName>
+	<ElementKind>Mu</ElementKind>
+	<Desc>混杂了碎木灵晶的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>228B22FF</Color>
+	<Flammability>
+		<BurningPoint>1600</BurningPoint>
+	</Flammability>
+	<Item>
+		<Prices>
+			<TalkType>4</TalkType>
+			<BaseCount>100</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_MuLingJingYC" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>木灵晶</NamePrefix>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_xingsui</StuffTexPath>
+			<ColorWhenBeFloor>00FF0088</ColorWhenBeFloor>
+			<ColorWhenBeRoof>2ae300</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1600</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>6</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_ShuiLingJingLeftoverYC" Parent="LeftoverMaterialBase">
+	<ThingName>水灵晶角料</ThingName>
+	<ElementKind>Shui</ElementKind>
+	<Desc>混杂了碎水灵晶的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>0000FFFF</Color>
+	<Flammability>
+		<BurningPoint>1600</BurningPoint>
+	</Flammability>
+	<Item>
+		<Prices>
+			<TalkType>4</TalkType>
+			<BaseCount>100</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_ShuiLingJingYC" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>水灵晶</NamePrefix>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_xingsui</StuffTexPath>
+			<ColorWhenBeFloor>5c78ff</ColorWhenBeFloor>
+			<ColorWhenBeRoof>4f45fd</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1600</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>6</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+
+<ThingDef Type="Item" Name="Item_HuoLingJingLeftoverYC" Parent="LeftoverMaterialBase">
+	<ThingName>火灵晶角料</ThingName>
+	<ElementKind>Huo</ElementKind>
+	<Desc>混杂了碎火灵晶的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>8B4513FF</Color>8B4513FF
+	<Flammability>
+		<BurningPoint>1600</BurningPoint>
+	</Flammability>
+	<Item>
+		<Prices>
+			<TalkType>4</TalkType>
+			<BaseCount>100</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_HuoLingJingYC" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>火灵晶</NamePrefix>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_xingsui</StuffTexPath>
+			<ColorWhenBeFloor>FF000088</ColorWhenBeFloor>
+			<ColorWhenBeRoof>fa6f00</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1600</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>6</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+
+<ThingDef Type="Item" Name="Item_TuLingJingLeftoverYC" Parent="LeftoverMaterialBase">
+	<ThingName>土灵晶角料</ThingName>
+	<ElementKind>Tu</ElementKind>
+	<Desc>混杂了碎土灵晶的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+	<Color>FFA500FF</Color>
+	<Flammability>
+		<BurningPoint>1600</BurningPoint>
+	</Flammability>
+	<Item>
+		<Prices>
+			<TalkType>4</TalkType>
+			<BaseCount>100</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1"/>
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2" />
+				<SalePrice Value="0" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<BeMade>
+			<WorkToMake>20</WorkToMake>
+			<Quality>0</Quality>
+			<CostItems>
+				<Item name = "Item_TuLingJingYC" count = "1"/>
+			</CostItems>
+		</BeMade> 
+		<BeMaterial>
+			<NamePrefix>土灵晶</NamePrefix>
+			<RateWhenBeMain>6</RateWhenBeMain>
+			
+			<StuffTexPath>res/mattex/mtl_xingsui</StuffTexPath>
+			<ColorWhenBeFloor>8B4513FF</ColorWhenBeFloor>
+			<ColorWhenBeRoof>aa8b2e</ColorWhenBeRoof>
+			
+			<BurningPointWhenBeMain>1600</BurningPointWhenBeMain>
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>6</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+		</BeMaterial>
+	</Item>
+</ThingDef>
+
+
+</List></ThingDefs>

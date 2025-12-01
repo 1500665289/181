@@ -1,0 +1,44 @@
+<Places><List>
+	<Place Name="Place_Level2Base">
+		<Desc>2级地点模板</Desc>
+		<Level>2</Level>
+		<Scale>0.5</Scale>
+		<School>-1</School>
+		<UnLocked>0</UnLocked>
+		<ExploreNum>0</ExploreNum>
+	</Place>
+	
+	<Place Name="Place_KunLun1" Parent="Place_Level2Base">  
+		<Location X="374" Y="335"/>
+		<Icon>res/Sprs/map/map_xuanai01</Icon>
+		<Flipping>1</Flipping>
+		<DisplayName>登仙台</DisplayName>
+		<Desc>昆仑山南麓的一座石台，其上铭刻许多意义不明的纹理。据说上古时期东王公于此分封群仙，飞升仙境，并于此留下道统以待有缘人。 </Desc>
+		<FightMap>
+			<Name>Place_KunLun1_Platform_DengXian</Name>
+			<Class>Place_KunLun1_Platform_DengXian</Class>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DimCave</Weather>
+			<PowerLevel>15</PowerLevel>
+		</FightMap>
+		<Events>
+		    <li Name="HighFind" Rate="1"/>
+			<li Name="BaoZang_DengXian" Rate="0.1"/>
+		</Events>
+		<HighProduce>
+	        <li>
+				<ThingDef>Item_TianDaoguoYC</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_PanTaoYC</ThingDef>
+				<Count>2</Count>
+				<Rate>0.2</Rate>
+			</li>
+			
+		</HighProduce>
+	</Place>
+	
+</List></Places>
